@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="containerRate">
+            <p>Adulto (1)<span>R$ 439,80</span></p>
+            <p>Taxa de embarque <span>R$ 50,19</span></p>
+            <p>Encargos <span>R$ 439,80</span></p>
+            <p>Total <span>R$ 439,80</span></p>
+        </div>
+        <p class="resumo">Resumo do seu itinerário</p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ver itinerário
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <div class="airplane">
+                            <div class="padding">
+                                <p>
+                                    <img class="aviao-left" src="./assets/aviao.png" /> Ida <span>Sexta-feira
+                                        25/10/2019</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ---------------------------    informações do voo------------------------------>
+                        <div class="align">
+                            <img class="img-map" src="https://ll-qa.s3.amazonaws.com/media/aereo/AD.png" alt="">
+                            <p>Azul</p></img>
+                            <div class="voo">
+                                <p>Voo - AD4085</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <!-- ---------------------------    informações do voo---------------------------- -->
+
+                        <div class="container-date">
+                            <div>
+                                <p>Qua 23 Nov</p>
+                                <p>Qua 23 Nov</p>
+                                <p>SDU</p>
+                                <p>Santos Dumont</p>
+                            </div>
+
+                            <div class="line-curto"></div>
+                            <div class="duracao">
+                                <p>Duração </p>
+                                <span>1H5M</span>
+                            </div>
+                            <div class="line-curto"></div>
+
+                            <div>
+                                <p>Qua 23 Nov</p>
+                                <p>Qua 23 Nov</p>
+                                <p>SDU</p>
+                                <p>Guarulhos <br /> International</p>
+                            </div>
+                        </div>
+
+                        <p class="cidade">Rio de Janeiro para São Paulo</p>
+                        <div class="bagagem">
+                            <p> <img src="./assets/icons8-info.svg" alt="icon-inform">
+                                Inclui bagagem de mão
+                            </p>
+                        </div>
+
+                        <!--   ------------------------Repetindo as informações de ida para volta---------------------------------------- -->
+
+                        <div class="airplane">
+                            <div class="padding">
+                                <p>
+                                    <img class="aviao-right" src="./assets/aviao.png" /> Volta <span>Sexta-feira
+                                        25/10/2019</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ---------------------------    informações do voo---------------------------- -->
+
+                        <div class="align">
+                            <img class="img-map" src="https://ll-qa.s3.amazonaws.com/media/aereo/AD.png" alt="">
+                            <p>Azul</p></img>
+                            <div class="voo">
+                                <p>Voo - AD4085</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <!-- ---------------------------    informações do voo---------------------------- -->
+
+                        <div class="container-date">
+                            <div>
+                                <p>Qua 23 Nov</p>
+                                <p>Qua 23 Nov</p>
+                                <p>SDU</p>
+                                <p>Santos Dumont</p>
+                            </div>
+
+                            <div class="line-curto"></div>
+                            <div class="duracao">
+                                <p>Duração </p>
+                                <span>1H5M</span>
+                            </div>
+                            <div class="line-curto"></div>
+
+                            <div>
+                                <p>Qua 23 Nov</p>
+                                <p>Qua 23 Nov</p>
+                                <p>SDU</p>
+                                <p>Guarulhos <br /> International</p>
+                            </div>
+                        </div>
+
+                        <p class="cidade">Rio de Janeiro para São Paulo</p>
+                        <div class="bagagem">
+                            <p> <img src="./assets/icons8-info.svg" alt="icon-inform">
+                                Inclui bagagem de mão
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--   ------------------------fim das infor viagem---------------------------------------- -->
+            <section class="formulario">
+                <button type="button" id="btn-form">Dados dos passageiros <img class="chevron"
+                        src="./assets/down-arrow.png" alt="chevron" /></button>
+
+
+
+                <form id="container-form">
+                    <p class="adultez">Adulto 1</p>
+                    <div class="container-passenger">
+                        <label  class="label-input">Nome</label>
+                        <input class="input-form" class="margin-top" type="text" id="nome" required>
+                        
+                        <label  class="label-input">Sobrenome</label>
+                        <input class="input-form" class="margin-top" type="text" id="nome" required>
+                        
+                        <label  class="label-input">Sexo</label>
+                        <select class="select-value">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                        
+                        <label  class="label-input">Data de Nascimento</label>
+                        <input class="input-form"  type="date"  required/>
+                    </div>
+                    <button class="btn-confirm" type="submit">SALVAR INFORMAÇÕES</button>
+                </form>
+
+
+                <form class="form">
+                    <p class="text-payment">Dados de pagamento</p>
+                    <div class="form-group">
+                        <label class="label-input">Nome como escrito no cartão</label>
+                        <input class="input-form" class="margin-top" type="text" required />
+                        <label class="label-input">Número do Cartão</label>
+                        <input  class="input-form" type="text" required />
+                    </div>
+
+                    <div class="input-display">
+                        <div class="expiracao">
+                            <label class="label-input">Data de expiração</label>
+                            <input  class="input-form" type="text" required />
+                        </div>
+                        <div class="cvv">
+                            <label class="label-input">CVV</label>
+                            <input class="input-form" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="cpf">
+                        <label class="label-input">CPF do titular do cartão</label>
+                        <input class="input-form" type="text" required />
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="div-value">
+                        <label>Parcelas</label>
+                        <select class="select-value">
+                            <option value="1">R$670,07 à vista</option>
+                            <option value="1">R$670,07 à vista</option>
+                            <option value="1">R$670,07 à vista</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" required />
+                        <label>Declaro que li e aceito os <a class="link" href="">Termos e Condições</a> de uso do
+                            programa, bem como as <a class="link" href="">Políticas de Alteração e Cancelamento dos
+                                Serviços</a> .</label>
+                    </div>
+
+                    <button class="btn-confirm" type="submit">CONFIRMA</button>
+                </form>
+            </section>
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
+<script src="./index.js"></script>
+</html>

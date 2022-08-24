@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-recarga{
+    color: #00BAB3;
+    text-align: center;
+}
+
+.paragraph {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.container-product {
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.fa-star{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.card-img-top {
+    height: 100% !important;
+    width: 100% !important;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .card-img-top {
+        gap: 10px;
+    }
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+
+.card {
+    flex: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 9.7rem !important;
+    }
+}
+
+
+.title {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+@media(max-width: 800px) {
+    .title {
+        font-size: 0.9rem;
+    }
+}
+
+span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.card-body{
+    padding: 0 !important;
+}
+
+
+.botao{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(0, 186, 179);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.spots{
+    color: #90949A;
+    font-weight: bold;
+    margin-top: 25px; 
+}
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Resultado de busca</h3>
+
+        <section id="container-filtering">
+            <div class="container-filter">
+                <p class="filter">Filtrar os resusltados</p>
+                <p class="bagre">Bagagens</p>
+                <div class="container-input-checkbox">
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter" value="filter" />
+                            Todos os voos
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter" value="filter" />
+                            Com bagagem despachada
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="filter" value="filter" />
+                            Apenas com bagagem de mão
+                        </label>
+                    </div>
+                    <div class="line-thick"></div>
+                    <p class="bagre">Número de paradas</p>
+                    <div class="container-input-checkbox">
+                        <div>
+                            <label>
+                                <input type="checkbox" name="filter" value="filter" />
+                                Todas as opções
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="filter" value="filter" />
+                                Direito <span>231 voos</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="filter" value="filter" />
+                                1 parada <span>42voos</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="filter" value="filter" />
+                                2 parada <span>42 voos</span>
+                            </label>
+                        </div>
+                        <div class="line-thick"></div>
+
+                        <p class="bagre">Companhia aérea</p>
+                        <div class="container-input-checkbox">
+                            <div>
+                                <label>
+                                    <input type="checkbox" name="filter" value="filter" />
+                                    Todas as companhias
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox" name="filter" value="filter" />
+                                   Azul
+                                </label>
+                            </div>    
+                            <div>
+                                <label>
+                                    <input type="checkbox" name="filter" value="filter" />
+                                   LATAM
+                                </label>
+                            </div>                              
+                            <button class="applyFIlter" type="button">
+                                APLICAR FILTRO
+                            </button>
+                            <button class="cleanFilter" type="reset">
+                                LIMPAR FILTRO
+                            </button>
+                        </div>
+        </section>
+        <div class="divBuscaled">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Refazer busca
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contéudo</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtering">
+                <img src="./assets/filter.png" alt="imagem do Filtro" />
+                <p>Filtrar</p>
+            </div>
+        </div>
+        <div class="passagem">
+            <div class="conteudoDaPassagem">
+                <p class="tarifa">Tarifa por adulto</p>
+                <p class="value">13.000<span>Pts</span></p>
+            </div>
+            <button class="btn-button">COMPRAR</button>
+        </div>
+        <div class="airplane">
+            <div class="padding">
+                <p>
+                    <img class="aviao-left" src="./assets/aviao.png" /> Ida <span>Sexta-feira
+                        25/10/2019</span>
+                </p>
+            </div>
+        </div>
+        <div class="airTicketInstruction">
+            <div class="checkboxContainer">
+                <input class="radio-input" type="radio" name="order" id="radio1" value="relevant" />
+                <img class="img-logo" src="./assets/te.png" />
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo:</p>
+                <p>00:30</p>
+            </div>
+            <div class="direto">
+                <div class="line"></div>
+                <p>Direto</p>
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo: <img class="information" src="./assets/icons8-info.svg"
+                        alt="img-information" /></p>
+                <p>00:30</p>
+            </div>
+        </div>
+        <div class="airTicketInstruction">
+            <div class="checkboxContainer">
+                <input class="radio-input" type="radio" name="order" id="radio1" value="relevant" />
+                <img class="img-logo" src="./assets/te.png" />
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo:</p>
+                <p>00:30</p>
+            </div>
+            <div class="direto">
+                <div class="line"></div>
+                <p>Direto</p>
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo: <img class="information" src="./assets/icons8-info.svg"
+                        alt="img-information" /></p>
+                <p>00:30</p>
+            </div>
+        </div>
+
+        <div class="airplane">
+            <div class="padding">
+                <p>
+                    <img class="aviao-right" src="./assets/aviao.png" /> Volta <span>Sexta-feira
+                        25/10/2019</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="airTicketInstruction">
+            <div class="checkboxContainer">
+                <input class="radio-input" type="radio" name="order" id="radio1" value="relevant" />
+                <img class="img-logo" src="./assets/te.png" />
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo: </p>
+                <p>00:30</p>
+            </div>
+            <div class="direto">
+                <div class="line"></div>
+                <p>Direto</p>
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo: <img class="information" src="./assets/icons8-info.svg"
+                        alt="img-information" /></p>
+                <p>00:30</p>
+            </div>
+        </div>
+        <div class="airTicketInstruction">
+            <div class="checkboxContainer">
+                <input class="radio-input" type="radio" name="order" id="radio1" value="relevant" />
+                <img class="img-logo" src="./assets/te.png" />
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo:</p>
+                <p>00:30</p>
+            </div>
+            <div class="direto">
+                <div class="line"></div>
+                <p>Direto</p>
+            </div>
+            <div class="cidade">
+                <p>GRU</p>
+                <p class="cidadeColor">são paulo: <img class="information" src="./assets/icons8-info.svg"
+                        alt="img-information" /></p>
+                <p>00:30</p>
+            </div>
+        </div>
+        <div class="rate">
+            <button id="button" type="button">
+                Ver taxas inclusas
+                <img id="svg" src="./assets/down-arrow.png" alt="img-down-arrow" />
+            </button>
+
+
+            <div id="containerRate">
+                <p>Adulto (1)<span>R$ 439,80</span></p>
+                <p>Taxa de embarque <span>R$ 50,19</span></p>
+                <p>Encargos <span>R$ 439,80</span></p>
+                <p>Total <span>R$ 439,80</span></p>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
+
+<script src="./index.js"></script>
+
+</html>

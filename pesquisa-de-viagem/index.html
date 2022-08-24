@@ -1,0 +1,3775 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Passagens aéreas - Trigg Shop</title>
+    <base href="/" />
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://ll-qa.s3.amazonaws.com/public/trigg/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://ll-qa.s3.amazonaws.com/public/trigg/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://ll-qa.s3.amazonaws.com/public/trigg/img/favicon-16x16.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans" />
+    <script src="https://kit.fontawesome.com/4609a5440e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/bootstrap-select.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/styles.v1.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://ll-qa.s3.amazonaws.com/public/trigg/css/easy-autocomplete.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://ll-qa.s3.amazonaws.com/public/trigg/css/easy-autocomplete.themes.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/ll-trigg.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/aero.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/trigg-aereo.css" />
+    <link rel="stylesheet" type="text/css" href="https://ll-qa.s3.amazonaws.com/public/trigg/css/flight-resume.css" />
+
+    <script src="https://ll-qa.s3.amazonaws.com/public/trigg/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/app/Loader.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class=" url_">
+
+    <div class="modal-loading-unicred" id="loading" tabindex="-1" role="dialog" aria-labelledby="loading"
+        aria-hidden="true"
+        style="width: 100%;position: fixed;top: 0px;z-index: 9999;display: none;background: #fff;height: 100% !important;">
+        <div class="w-100 modal-dialog modal-dialog-loading-unicred">
+            <div class="loader"
+                style="width: 100% !important;justify-content: center !important;margin: auto !important;">
+                <img width="55px" height="25px" src="https://ll-qa.s3.amazonaws.com/public/trigg/img/loadingpsd.gif"
+                    title="loading" alt="loading"
+                    style="width: 55px;transform: none;-webkit-transform: none;position: relative;max-width: 150px;margin: 25% auto 0;z-index: 100000;">
+            </div>
+        </div>
+    </div>
+    <!-- Colocar no php o nome da página na classe do body para identificar -->
+
+    <script>
+        var deviceOs = 'pc';
+    </script>
+
+    <header
+        style="position: fixed;top:0;left: 50%;transform: translateX(-50%);width: 100%;z-index: 10;background-color: #FFFFFF; z-index: 2000;">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-3 div-menu">
+
+                    <div id="nav-icon" class="navbar-toggler">
+                        <a href="#" class="back-page transition-click"><i class="fas fa-arrow-left"></i></a>
+                    </div>
+
+
+                    <div id="nav-back-categ">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+
+                    <div id="nav-back-marca">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 div-logo">
+                    <a href="/loja" class="transition-click"><img class="logo"
+                            src="https://ll-qa.s3.amazonaws.com/public/trigg/img/logo.png"></a>
+                </div>
+                <div class="col-3 col-md-3 cart-search">
+                    <div class="navitem-right">
+                        <a href="/loja/orderresume" class="icon-cart">
+                            <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/cart.png">
+                        </a>
+
+                        <a id="search-icon" href="/loja" data-toggle="collapse" data-target="#navbarSearch"
+                            aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/lupa.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item nav-title">
+                    Menu
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link transition-click" href="/trigg/loja/meu-cadastro">Minha Conta<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link transition-click" href="/trigg/loja/pedidos">Pedidos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link transition-click" href="/trigg/loja/wishlist">Favoritos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="dropdown-toggle collapsed nav-link" href="#sub-prod" data-toggle="collapse"
+                        aria-expanded="false">Produtos e Serviços</a>
+                    <ul class="collapse pb-3" id="sub-prod">
+                        <li class="nav-item">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link goCat" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link goMarc" href="#">Marcas</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="dropdown-toggle collapsed nav-link menu-link" href="#sub-prod-uni" data-toggle="collapse"
+                        aria-expanded="false">Produtos Trigg</a>
+                    <ul class="collapse pb-3" id="sub-prod-uni">
+                        <li class="nav-item transition-click" style="border-bottom: none">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link" href="/trigg/loja/categoria/b83cb5b7/cashback">
+                                Cashback</a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: none">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link" href="/trigg/loja/categoria/7439c6f4/precaver">
+                                Precaver</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="dropdown-toggle collapsed nav-link" href="#sub-viage" data-toggle="collapse"
+                        aria-expanded="false">Viagens</a>
+                    <ul class="collapse pb-1" id="sub-viage">
+
+
+                        <li class="nav-item">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link transition-click" href="/trigg/passagens-aereas/programas">Transferência
+                                de Pontos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="dropdown-toggle collapsed nav-link menu-link" href="#sub-recharge" data-toggle="collapse"
+                        aria-expanded="false">Recarga</a>
+                    <ul class="collapse pb-1" id="sub-recharge">
+
+                        <li class="nav-item">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link" href="/trigg/recarga-celular">Celular</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fas fa-caret-right float-right"></i>
+                            <a class="nav-link" href="/trigg/recarga-tv">TV</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ajuda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Categorias Menu -->
+    <div id="navbarCategorias" class="navbar-light">
+        <div class="navbar-search">
+            <div class="content text-center">
+                <p class="title">Categorias</p>
+                <input type="text" name="search" placeholder="Procurar categoria" class="text-center hide">
+                <i class="fab fa-sistrix hide"></i>
+            </div>
+        </div>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/54d8dd57/bebidas">
+                    Bebidas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/1038b1e4/beleza-e-bem-estar">
+                    Beleza e bem-estar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/d6a89b16/celulares">
+                    Celulares</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/fbf1e8eb/eletro">
+                    Eletro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/7ab8c759/eletrnicos-e-acessrios">
+                    Eletrônicos e acessórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/9365e623/emprio">
+                    Empório</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click"
+                    href="/trigg/loja/categoria/09c57621/produtos-de-beleza-e-acessrios">
+                    Produtos de Beleza e Acessórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/20f4a8b4/tv-e-vdeos">
+                    TV e vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/8bd07ca5/categoria-teste-vtex">
+                    Categoria teste vtex</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link transition-click" href="/trigg/loja/categoria/d9a54512/xp-teste-1">
+                    XP TESTE 1</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Marcas Menu -->
+    <div id="navbarMarcas" class="navbar-light">
+        <div class="navbar-search">
+            <div class="content text-center">
+                <p class="title">Marcas</p>
+                <input type="text" name="search" placeholder="Procurar marca" class="text-center hide">
+                <i class="fab fa-sistrix hide"></i>
+            </div>
+        </div>
+
+        <h4 class="mt-5 brand-name">A</h4>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/absolut">Absolut</a>
+            </li>
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/apple">Apple</a>
+            </li>
+
+        </ul>
+        <h4 class="mt-5 brand-name">B</h4>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item"><a class="nav-link transition-click"
+                    href="/trigg/loja/marca/ballantines">Ballantines</a>
+            </li>
+
+        </ul>
+        <h4 class="mt-5 brand-name">F</h4>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/fasano">Fasano</a>
+            </li>
+
+        </ul>
+        <h4 class="mt-5 brand-name">G</h4>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/gamaitaly">GAMAItaly</a>
+            </li>
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/grand-cru">Grand Cru</a>
+            </li>
+
+        </ul>
+        <h4 class="mt-5 brand-name">C</h4>
+        <ul class="navbar-nav mr-auto mt-3">
+            <li class="nav-item"><a class="nav-link transition-click" href="/trigg/loja/marca/caf-store">Café Store</a>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+    <!-- Busca -->
+    <div class="navbar-search collapse" id="navbarSearch">
+        <div class="container">
+            <div class="content text-center">
+                <span class="btn-close float-right">
+                    <a href="#" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
+                        aria-expanded="false"><i class="fas fa-times"></i></a>
+                </span>
+                <p class="title">Busca</p>
+                <form action="/trigg/loja/produtos" method="get" id="search">
+                    <input type="hidden" name="query" value="form" />
+                    <input type="hidden" name="from" value="" />
+                    <input id="search_input" type="text" name="q" placeholder="Pesquisar" class="text-center" value="">
+
+                    <i class="fab fa-sistrix"></i>
+                    <button type="submit" class="transition-click">Procurar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- BANNERS -->
+
+    <style>
+       #carouselHome .carousel-indicators li, #carouselProdutos .carousel-indicators li, #carouselDetalhes .carousel-indicators li {
+            margin-top: -70px !important;
+            
+        }
+
+        #carouselHome .carousel-indicators .active, #carouselProdutos .carousel-indicators .active, #carouselDetalhes .carousel-indicators .active{
+            background:  white;
+        }
+
+        [type="radio"]:checked + label:after{
+            background:  #00BAB3;
+        }
+
+        [type="radio"]:checked + label:before{
+            border: 1px solid #00BAB3 !important;
+        }
+    </style>
+
+    <section>
+        <div id="carouselProdutos" class="carousel slide mobile-hide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProdutos" data-slide-to="1" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active"> <img
+                        src="https://ll-qa.s3.amazonaws.com/media/bannerViagemCarrossel/slide/6b84e612-9f97-49d8-8f00-e80aa8cefa2e.jpg"
+                        class="d-block w-100" alt="..."></div>
+                <div class="carousel-item "> <img
+                        src="https://ll-qa.s3.amazonaws.com/media/bannerViagemCarrossel/slide/28a50a83-fd61-49a4-ab64-35ca607a1523.jpg"
+                        class="d-block w-100" alt="..."></div>
+            </div>
+        </div>
+        <div id="carouselProdutos" class="carousel slide desk-hide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProdutos" data-slide-to="1" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active"> <img
+                        src="https://ll-qa.s3.amazonaws.com/media/bannerViagemCarrossel/slide/6b84e612-9f97-49d8-8f00-e80aa8cefa2e-mobile.jpg"
+                        class="d-block w-100" alt="..."></div>
+                <div class="carousel-item "> <img
+                        src="https://ll-qa.s3.amazonaws.com/media/bannerViagemCarrossel/slide/28a50a83-fd61-49a4-ab64-35ca607a1523-mobile.jpg"
+                        class="d-block w-100" alt="..."></div>
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+
+        <style> 
+        #pesquise-passagem{
+            margin-top: -120px;
+        }
+        </style>
+
+        <div id="pesquise-passagem">
+            <h3 class="trans-simular mb-4">Pesquise sua passagem</h3>
+            <form action="/trigg/passagens-aereas/voos" method="get" id="submitAereo">
+                <input type="hidden" name="query" id="query" value="form" />
+
+                <div class="form-check form-check-inline mb-4">
+
+                    <input type="radio" name="trip_type" id="trip_type_1" class="form-check-input trip_type_1" value="1"
+                        checked />
+
+                    <label class="form-check-label" for="trip_type_1">Ida e volta</label>
+                </div>
+
+                <div class="form-check form-check-inline mb-4">
+                    <input type="radio" name="trip_type" id="trip_type_2" class="form-check-input trip_type_2"
+                        value="2" />
+
+                    <label class="form-check-label" for="trip_type_2">Apenas ida</label>
+                </div>
+
+                <div class="form-row mb-4">
+                    <div class="col">
+
+                        <input type="text" id="inputFromName" placeholder="Origem"
+                            class="form-control autocomplete-geolocation passagens-input input_flight_from autocomplete-geolocation-from"
+                            name="from" value="" autocomplete="off">
+
+                        <div class="easy-autocomplete-container" id="eac-container-geolocation-from">
+                            <ul style="display: none;">
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                        <input type="text" id="inputToName" placeholder="Destino"
+                            class="form-control autocomplete-geolocation passagens-input input_flight_from autocomplete-geolocation-to"
+                            name="to" value="" autocomplete="off">
+                        <div class="easy-autocomplete-container" id="eac-container-geolocation-to">
+                            <ul style="display: none;">
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <script>
+                    var minFlightDate = '2022-08-24';
+                    var maxFlightDate = '2023-08-22';
+                </script>
+
+                <div class="form-row mb-4">
+                    <div class="col" style="float:left; width: 50%;">
+                        <div style="position: absolute;  width: 94%; height: 30px; color: #5F5F5F;"
+                            class="form-control data-volta passagens-input data-focus input_date"
+                            onclick="$(this).next().click().focus(); $(this).remove();">Ida</div>
+                        <input type="date" placeholder="Ida" min="2022-08-24" max="2023-08-22"
+                            class="form-control data-ida passagens-input data-focus input_date" name="from_date"
+                            id="from_date" value="" autocomplete="off">
+                    </div>
+                    <div class="col" style="float:right; width: 50%;">
+                        <div style="position: absolute;  width: 94%; height: 30px; color: #5F5F5F;"
+                            class="form-control data-volta passagens-input data-focus input_date"
+                            onclick="$(this).next().click().focus(); $(this).remove();">Volta</div>
+                        <input type="date" placeholder="Volta" min="2022-08-24" max="2023-08-22"
+                            class="form-control data-volta passagens-input data-focus input_date" name="to_date"
+                            id="to_date" value="" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="form-row mb-4">
+
+                    <div class="col">
+                        <input class="form-control passagens-input btn_open_passengers input_passengers input-filter"
+                            placeholder="Passageiros" name="" value="" onkeypress="return false;"
+                            onchange="return false">
+
+                    </div>
+
+                    <div class="col">
+                        <select class="form-control passagens-input btn_click_classe input-filter"
+                            style="    border: none;border-bottom: 1px solid #bebebe;" name="class" id="class">
+
+                            <option value="economy" selected>Econômica</option>
+
+                            <option value="PremiumEconomy">Premium Economy
+                            </option>
+                            <option value="business">Executiva
+                            </option>
+                            <option value="firstclass">Primeira Classe
+                            </option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div>
+                    <input type="hidden" name="from-date" id="from-date" value="">
+                    <input type="hidden" name="from-date-formatted" id="from-date-formatted" value="">
+                    <input type="hidden" name="to-date" id="to-date" value="">
+                    <input type="hidden" name="to-date-formatted" id="to-date-formatted" value="">
+                    <input type="hidden" name="from-code" id="from-code" value="">
+                    <input type="hidden" name="from-code-formatted" id="from-code-formatted" value="">
+                    <input type="hidden" name="from-main-code" id="from-main-code" value="">
+                    <input type="hidden" name="from-country-code" id="from-country-code" value="">
+                    <input type="hidden" name="to-code" id="to-code" value="">
+                    <input type="hidden" name="to-main-code" id="to-main-code" value="">
+                    <input type="hidden" name="to-country-code" id="to-country-code" value="">
+                    <input type="hidden" name="from-name" id="from-name" value="">
+                    <input type="hidden" name="to-name" id="to-name" value="">
+                    <input type="hidden" name="type" id="trip-type" value="1">
+                    <input type="hidden" name="direct" id="direct" value="0">
+                    <input type="hidden" name="cabin" id="cabin" value="Economy">
+                </div>
+
+                <div class="ll-modal modal-passengers">
+                    <div class="modal-content">
+                        <header>
+                            <div class="top flex-container">
+                                <div>
+                                    <a href="#" class="action_close_modal">
+                                        <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_left.svg"
+                                            alt="Voltar">
+                                    </a>
+                                </div>
+                                <div class="ml-auto mr-auto">
+                                    <h5>Passageiros</h5>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="flex-container airflight">
+
+                            <div class="col-6 type">
+                                <p>
+                                    <b>Adulto</b> <span>12+</span>
+                                </p>
+                            </div>
+
+                            <div class="col-6 quantity flex-container">
+                                <div class="counter-box">
+                                    <div class="decrease pointer">
+                                        <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_minus.svg">
+                                    </div>
+                                    <input type="hidden" name="adults" id="adults" titulo="Adulto(s)" class="qtde_field"
+                                        value="1">
+                                    <span class="input_val">
+                                        <p align="center" class="qtde_value is_adult">1</p>
+                                    </span>
+                                    <div class="increase pointer">
+                                        <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_plus.svg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 type">
+                                <p><b>Criança</b> <span>2-11</span></p>
+                            </div>
+
+                            <div class="col-6 quantity flex-container">
+                                <div class="counter-box">
+                                    <div class="decrease pointer">
+                                        <img src="https://ll-qa.s3.amazonaws.com/public/unicrtrigged/img/bt_minus.svg">
+                                    </div>
+                                    <input type="hidden" name="children" id="children" titulo="Criança(s)"
+                                        class="qtde_field" value="0">
+                                    <span class="input_val">
+                                        <p align="center" class="qtde_value">0</p>
+                                    </span>
+                                    <div class="increase pointer">
+                                        <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_plus.svg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 type">
+                                <p><b>Bebê</b> <span>
+                                        < 2</span> </p> </div> <div class="col-6 quantity flex-container">
+                                            <div class="counter-box">
+                                                <div class="decrease pointer">
+                                                    <img
+                                                        src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_minus.svg">
+                                                </div>
+                                                <input type="hidden" name="baby" id="baby" titulo="Bebê(s)"
+                                                    class="qtde_field" value="0">
+                                                <span class="input_val">
+                                                    <p align="center" class="qtde_value">0</p>
+                                                </span>
+                                                <div class="increase pointer">
+                                                    <img
+                                                        src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_plus.svg">
+                                                </div>
+                                            </div>
+                            </div>
+
+                        </div>
+                        <div class="ctn_fixed_bottom action_close_modal">
+                            <button type="button"
+                                class="button is-medium is-warning is-fullwidth gold_button button-salvar">
+                                SALVAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button style="background-color:#00BAB3 !important; border: 0;">Pesquisar</button>
+ 
+            </form>
+        </div>
+
+        <br />
+        <!--  --------------------------------------style do carousel--------------------------------------------- -->
+
+        <style>
+
+
+            h4 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
+
+            .img-hotel {
+                width: 100%;
+                height: 50%;
+            }
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 80px;
+            }
+
+            .swiper-slide {
+                font-size: 18px;
+                background-color: #F0F2F5;
+                height: calc((100% - 30px) / 2);
+
+            }
+
+            .content-carousel {
+                padding-top: 7px;
+                padding-left: 20px;
+            }
+
+            .title {
+                color: #00BAB3;
+                font-weight: bold;
+
+            }
+
+            .stretch {
+                font-size: 10px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+
+            .price {
+                font-weight: bold;
+                color: #90949A;
+                font-size: 25px;
+                margin-bottom: 7px;
+            }
+
+
+            .span {
+                font-size: 13px;
+            }
+
+            .btn-card {
+                width: 100%;
+                color: #fff;
+                background-color: #00BAB3;
+                border-radius: 8px;
+                border: 0;
+                font-weight: 500;
+                font-size: 18px;
+                padding: 7px;
+            }
+        </style>
+
+        <!--  -----script carousel----- -->
+
+        <div class="container">
+            <h4 class="Ticket">Passagens nacionais em oferta</h4>
+            <div class="swiper mySwiper">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.qhcB1Lfj_qkJcClwQuD4VwHaE8?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://pmcaonline.org/wp-content/uploads/2019/10/hotel-1068x801.jpg" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.o9caHbvPIYB73UsCcE7wfAHaDt?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://design-middleeast.com/wp-content/uploads/2018/01/MercureHotel_19_October_2017.jpg"
+                                alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.bYdVzzyiY0VIy1eGV24g9wHaE8?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel" src="" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--      ---------------------------abaixo passagens internacionais -------------------------------->
+
+            <h4 class="Ticket">Passagens internacionais em oferta</h4>
+            <div class="swiper mySwiper">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.qhcB1Lfj_qkJcClwQuD4VwHaE8?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://pmcaonline.org/wp-content/uploads/2019/10/hotel-1068x801.jpg" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.o9caHbvPIYB73UsCcE7wfAHaDt?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://design-middleeast.com/wp-content/uploads/2018/01/MercureHotel_19_October_2017.jpg"
+                                alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel"
+                                src="https://th.bing.com/th/id/OIP.bYdVzzyiY0VIy1eGV24g9wHaE8?pid=ImgDet&rs=1" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                        <div class="swiper-slide"><img class="img-hotel" src="" alt="" />
+                            <div class="content-carousel">
+                                <p class="title">São Paulo para Fortaleza</p>
+                                <p class="stretch">Trecho a partir de:</p>
+                                <p class="price">25.000<span class="span">Pts + taxas</span></p>
+                            </div>
+                            <button type="button" class="btn-card">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Back top -->
+    <div id="back-to-top" href="#">
+        <i class="fas fa-caret-up float-left"></i>
+        <p>Voltar<br>ao topo</p>
+    </div>
+
+
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/slick.min.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/bulma-slider.min.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/pickadate/picker.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/pickadate/picker.date.js">
+    </script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/jquery.mask.js"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/jquery.easy-autocomplete.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/ll.js?1661198952"></script>
+    <script type="text/javascript" src="https://ll-qa.s3.amazonaws.com/public/trigg/js/utils.js?1661198952"></script>
+
+
+    <script src="https://assets.pagar.me/pagarme-js/3.0/pagarme.min.js"></script>
+
+    <script type="text/javascript">
+        var __kdt = __kdt || [];
+        __kdt.push({
+            "public_key": "T0039463B22"
+        });
+        (function () {
+            var kdt = document.createElement('script');
+            kdt.id = 'kdtjs';
+            kdt.type = 'text/javascript';
+            kdt.async = true;
+            kdt.src = 'https://i.k-analytix.com/k.js';
+            var s = document.getElementsByTagName('body')[0];
+            s.parentNode.insertBefore(kdt, s);
+        })();
+    </script>
+
+    <script>
+        var customerID = 'a190763c-2f08-45a0-8cd3-71f7e4d9bc52'; // define o ID do cliente
+        (function () {
+            var period = 300;
+            var limit = 20 * 1e3;
+            var nTry = 0;
+            var intervalID = setInterval(function () { // loop para retentar o envio
+                var clear = limit / period <= ++nTry;
+                if ((typeof (Konduto) !== "undefined") &&
+                    (typeof (Konduto.setCustomerID) !== "undefined")) {
+                    window.Konduto.setCustomerID(customerID); // envia o ID para a Konduto
+                    clear = true;
+                }
+                if (clear) {
+                    clearInterval(intervalID);
+                }
+            }, period);
+        })(customerID);
+    </script>
+
+    <script>
+        document.documentElement.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        }, false);
+
+        var iosToken = '';
+        var saldoDisponivel = 0;
+        var triggTokenHash = '';
+        var triggToken = '';
+
+        var extPostData;
+
+        $.ajaxSetup({
+            headers: {
+                'trigg_token_hash': triggTokenHash,
+            }
+        });
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-158813788-1', 'auto');
+        ga('send', 'pageview');
+
+        $('.product_do_star').click(function (e) {
+
+            var postdata = {
+                product: $(this).attr('attr-uuid')
+            };
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                extPostData = $.param(postdata);
+
+                window.webkit.messageHandlers.functionListener.postMessage("wishlistAjax");
+            } else {
+                $.ajax({
+                    url: "/trigg/loja/wishlist-ajax",
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postdata,
+                    headers: {
+                        'trigg_post_content': $.param(postdata),
+                    },
+                    success: function (data) {
+                        if (data != 'true') {
+                            alert('Ocorreu um erro!');
+                            stopLoading();
+                        }
+                    }
+                });
+            }
+
+            if ($(this).hasClass('far')) {
+                $(this).removeClass('far');
+                $(this).addClass('fas');
+
+                var wishCount = parseInt($('#wishWidget span').text()) + 1;
+                $('#wishWidget span').text(wishCount);
+                $('#wishWidget').show();
+            } else {
+                $(this).removeClass('fas');
+                $(this).addClass('far');
+
+                var wishCount = parseInt($('#wishWidget span').text()) - 1;
+                $('#wishWidget span').text(wishCount);
+                if (wishCount < 1) $('#wishWidget').hide();
+            }
+
+            return false;
+        });
+
+
+        $('.btn_putInCart').click(function () {
+            startLoading();
+
+            $('#tamanhoField').val($('#tamanhoInput').val());
+            $('#corField').val($('#corInput').val());
+
+            $('#tipoField').val($('#priceSelectMobile').val());
+
+            $('#product-add').submit();
+
+            return false;
+        });
+
+        $('.cart-remove').click(function (e) {
+            startLoading();
+
+            var el = $('.' + $(this).attr('attr-find'));
+
+            var product_uuid = el.attr('attr-puuid');
+            var tamanho = el.attr('attr-tamanho');
+            var cor = el.attr('attr-cor');
+            var type = el.attr('attr-type');
+
+            var postdata = {
+                product_uuid: product_uuid,
+                tamanho: tamanho,
+                cor: cor,
+                act: 'remove',
+                type: type,
+            };
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                extPostData = $.param(postdata);
+
+                window.webkit.messageHandlers.functionListener.postMessage("cartActionAjax");
+            } else {
+                $.ajax({
+                    url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postdata,
+                    headers: {
+                        'trigg_post_content': $.param(postdata),
+                    },
+                    complete: function () {
+                        $('#submitTransfer').removeAttr('disabled', 'disabled');
+                    },
+                    success: function (data) {
+                        if (data != 'true') {
+                            alert('Ocorreu um erro!');
+                            stopLoading();
+                        } else {
+                            jQuery('.general-loading').show();
+                            $('html').css({
+                                'overflow': 'hidden',
+                                'height': '100%'
+                            });
+
+                            document.ontouchmove = function (e) {
+                                e.preventDefault();
+                            }
+
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao chamar a sacola.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+            }
+        });
+
+        $('.cart_plus').click(function (e) {
+            startLoading();
+
+            var el = $('.' + $(this).attr('attr-find'));
+
+            var qty = parseInt(el.val()) + 1;
+
+            if (qty > 0) {
+                el.val(qty).prev().text(qty);
+            }
+
+            var product_uuid = el.attr('attr-puuid');
+            var tamanho = el.attr('attr-tamanho');
+            var cor = el.attr('attr-cor');
+            var type = el.attr('attr-type');
+
+            var postdata = {
+                product_uuid: product_uuid,
+                tamanho: tamanho,
+                cor: cor,
+                qty: qty,
+                type: type,
+            };
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                extPostData = $.param(postdata);
+
+                window.webkit.messageHandlers.functionListener.postMessage("cartActionAjax");
+            } else {
+                $.ajax({
+                    url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postdata,
+                    headers: {
+                        'trigg_post_content': $.param(postdata),
+                    },
+                    success: function (data) {
+                        if (data != 'true') {
+                            alert('Ocorreu um erro!');
+                            stopLoading();
+                        } else {
+                            jQuery('.general-loading').show();
+                            $('html').css({
+                                'overflow': 'hidden',
+                                'height': '100%'
+                            });
+
+                            document.ontouchmove = function (e) {
+                                e.preventDefault();
+                            }
+
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao chamar a sacola.');
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+            }
+        });
+
+        $('.shipping_method, .customer_address_general').change(function (e) {
+            var brand = $(this).attr('attr-find');
+            var shipping_method = jQuery('.shipping_method[attr-find="' + brand + '"]').val();
+            var customer_address = jQuery('.customer_address_general:checked[attr-find="' + brand + '"]').val();
+
+            var postdata = {
+                shipping_method: shipping_method,
+                customer_address: customer_address,
+                brand: brand,
+                act: 'shipping',
+            };
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                extPostData = $.param(postdata);
+
+                window.webkit.messageHandlers.functionListener.postMessage("cartActionAjax");
+            } else {
+                $.ajax({
+                    url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postdata,
+                    headers: {
+                        'trigg_post_content': $.param(postdata),
+                    },
+                    success: function (data) {
+                        if (data != 'true') {
+                            alert('Ocorreu um erro!');
+                            stopLoading();
+                        } else {
+                            jQuery('.general-loading').show();
+                            $('html').css({
+                                'overflow': 'hidden',
+                                'height': '100%'
+                            });
+
+                            document.ontouchmove = function (e) {
+                                e.preventDefault();
+                            }
+
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao chamar a sacola.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+            }
+        });
+
+        $('.cart_less').click(function (e) {
+            startLoading();
+
+            var el = $('.' + $(this).attr('attr-find'));
+
+            var qty = parseInt(el.val()) - 1;
+
+            if (qty > 0) {
+                el.val(qty).prev().text(qty);
+            }
+
+            var product_uuid = el.attr('attr-puuid');
+            var tamanho = el.attr('attr-tamanho');
+            var cor = el.attr('attr-cor');
+            var type = el.attr('attr-type');
+
+            if (qty < 1) {
+                var postdata = {
+                    product_uuid: product_uuid,
+                    tamanho: tamanho,
+                    cor: cor,
+                    act: 'remove',
+                    type: type,
+                };
+
+                if (deviceOs == 'ios') {
+                    e.preventDefault();
+
+                    extPostData = $.param(postdata);
+
+                    window.webkit.messageHandlers.functionListener.postMessage("cartActionAjax");
+                } else {
+                    $.ajax({
+                        url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                        dataType: 'html',
+                        type: 'POST',
+                        data: postdata,
+                        headers: {
+                            'trigg_post_content': $.param(postdata),
+                        },
+                        success: function (data) {
+                            if (data != 'true') {
+                                alert('Ocorreu um erro!');
+                                stopLoading();
+                            } else {
+                                jQuery('.general-loading').show();
+                                $('html').css({
+                                    'overflow': 'hidden',
+                                    'height': '100%'
+                                });
+
+                                document.ontouchmove = function (e) {
+                                    e.preventDefault();
+                                }
+
+                                window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                            }
+                        },
+                        error: function (xhr, er) {
+                            alert('Ocorreu um erro ao chamar a sacola.')
+                            stopLoading();
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        }
+                    });
+                }
+
+                return;
+            }
+
+            var postdata = {
+                product_uuid: product_uuid,
+                tamanho: tamanho,
+                cor: cor,
+                qty: qty,
+                type: type,
+            };
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                extPostData = $.param(postdata);
+
+                window.webkit.messageHandlers.functionListener.postMessage("cartActionAjax");
+            } else {
+                $.ajax({
+                    url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postdata,
+                    headers: {
+                        'trigg_post_content': $.param(postdata),
+                    },
+                    success: function (data) {
+                        if (data != 'true') {
+                            alert('Ocorreu um erro!');
+                            stopLoading();
+                        } else {
+                            jQuery('.general-loading').show();
+                            $('html').css({
+                                'overflow': 'hidden',
+                                'height': '100%'
+                            });
+
+                            document.ontouchmove = function (e) {
+                                e.preventDefault();
+                            }
+
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao chamar a sacola.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+            }
+        });
+
+        $('.cep-mask').mask('00000-000');
+
+        $('#add-cep').keyup(function (e) {
+            if ($(this).val().length < 9) return;
+
+            if (typeof cepXhr !== 'undefined') cepXhr.abort();
+
+            delete $.ajaxSettings.headers["trigg_token_hash"];
+
+            cepXhr = $.ajax({
+                type: 'GET',
+                url: "https://viacep.com.br/ws/" + $(this).val() + "/json/"
+            }).done(function (data) {
+                if (!data.erro) {
+                    $('#stateAd').val(data.uf);
+                    $('#stateAd2').val(data.uf);
+                    $('#cityAd').val(data.localidade);
+                    $('#cityAd2').val(data.localidade);
+                    $('#stAd').val(data.logradouro);
+                    $('#neighComp').val(data.bairro);
+                    $('#nmAd').focus();
+
+                    $('.label_stateAd, .label_cityAd, .label_stAd, .label_neighComp').addClass(
+                        'opened');
+                } else {
+                    $('#add-cep').val('');
+                    alert("CEP inválido ou não encontrado.");
+                    stopLoading();
+                }
+            });
+
+            $.ajaxSettings.headers["trigg_token_hash"] = triggTokenHash;
+
+        });
+
+        $('#add-cep-update').keyup(function () {
+
+            if ($(this).val().length < 9) return;
+
+            if (typeof cepXhr !== 'undefined') cepXhr.abort();
+
+            delete $.ajaxSettings.headers["trigg_token_hash"];
+
+            cepXhr = $.ajax({
+                type: 'GET',
+                url: "https://viacep.com.br/ws/" + $(this).val() + "/json/"
+            }).done(function (data) {
+                if (!data.erro) {
+                    $('#stateAd-update').val(data.uf);
+                    $('#stateAd2-update').val(data.uf);
+                    $('#cityAd-update').val(data.localidade);
+                    $('#cityAd2-update').val(data.localidade);
+                    $('#stAd-update').val(data.logradouro);
+                    $('#neighComp-update').val(data.bairro);
+                    $('#nmAd-update').focus();
+                } else {
+                    $('#add-cep-update').val('');
+                    alert("CEP inválido ou não encontrado.");
+                    stopLoading();
+                }
+            });
+
+            $.ajaxSettings.headers["trigg_token_hash"] = triggTokenHash;
+        });
+
+        $('.button-ordering').click(function (e) {
+            if (!$(this).hasClass('is-dark')) {
+                $('.button-ordering').removeClass('is-dark');
+                $(this).removeClass('is-outlined');
+                $(this).addClass('is-dark');
+                $('#setOrdering').val($(this).attr('attr-ordering'));
+
+                $('#pageFilterForm').submit();
+            }
+        });
+
+        $('.btn_filterCategory').click(function () {
+
+            console.log('filter-category');
+
+            $(".modal-categories").hide();
+
+            jQuery('.general-loading').show();
+            $('html').css({
+                'overflow': 'hidden',
+                'height': '100%'
+            });
+
+            document.ontouchmove = function (e) {
+                e.preventDefault();
+            }
+
+            var catPath = $(this).attr('attr-path');
+
+            if (!$(this).hasClass('is-dark')) {
+                $(this).removeClass('is-outlined');
+                $(this).addClass('is-dark');
+
+                $('#pageFilterForm').append('<input type="hidden" name="category[]" id="category-' + catPath +
+                    '" value="' + catPath + '" />');
+            } else {
+                $(this).removeClass('is-dark');
+                $(this).addClass('is-outlined');
+
+                $('#category-' + catPath).remove();
+            }
+
+            $('#pageFilterForm').submit();
+        });
+
+        function number_format(number, decimals, dec_point, thousands_sep) {
+            // Strip all characters but numerical ones.
+            number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+            var n = !isFinite(+number) ? 0 : +number,
+                prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+                sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+                dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+                s = '',
+                toFixedFix = function (n, prec) {
+                    var k = Math.pow(10, prec);
+                    return '' + Math.round(n * k) / k;
+                };
+            // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+            s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+            if (s[0].length > 3) {
+                s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+            }
+            if ((s[1] || '').length < prec) {
+                s[1] = s[1] || '';
+                s[1] += new Array(prec - s[1].length + 1).join('0');
+            }
+            return s.join(dec);
+        }
+
+        let hasClickedAtPayPrice = false;
+
+        function calculaParcelamento() {
+            console.log('parcelamento');
+
+            console.log('Rang Max: ' + $('#payment_range').attr('max'));
+
+            if (!$('#payment_range').attr('max')) return;
+
+            var rangeVal = $('#payment_range').attr('max') - $('#payment_range').val();
+            var rangeMax = $('#payment_range').attr('max');
+
+            if (rangeVal < valorTriggMin) {
+                $('#payment_range').val($('#payment_range').attr('max') - valorTriggMin);
+                //console.log("Max: " + $('#payment_range').attr('max') + "\n valorTriggMin: " + valorTriggMin + "\n Value: " + $('#payment_range').val());
+                calculaParcelamento();
+                return false;
+            }
+
+            if (rangeVal < valorTriggMinPoints) {
+                $('#payment_range').val($('#payment_range').attr('max') - valorTriggMinPoints);
+                calculaParcelamento();
+                return false;
+            }
+
+            if (rangeVal > saldoTrigg) {
+                $('#payment_range').val($('#payment_range').attr('max') - saldoTrigg);
+                calculaParcelamento();
+                return false;
+            }
+
+            var valorReais = (rangeMax - rangeVal) * valorFatorTrigg;
+
+            if (valorReais > 0 && valorReais <= 1) {
+                $('#payment_range').val($('#payment_range').attr('min'));
+                calculaParcelamento();
+                return false;
+            }
+
+            $('#atomos_exchange').val(rangeVal);
+
+            let currentValue = number_format(rangeVal, 0, "", ".");
+            let currentBRL = number_format(valorReais, 2, ",", ".");
+
+            $('#show_atomos').text(currentValue);
+            $('#show_atomos2').text(currentValue);
+            $('#show_cash').text('R$' + currentBRL);
+            $('#show_cashs').text(currentBRL);
+            $('#customPoints').val(currentValue);
+
+            let pontosAtribuir = $('.radio_tipo_pagamento_taxa').attr('data-pontos-utilizar');
+            console.log('# pontos atribuir: ' + pontosAtribuir);
+            let rangeDiff = rangeMax - rangeVal;
+            console.log('# range diff: ' + rangeDiff);
+            if (rangeDiff < pontosAtribuir) {
+                $('.tipo_pagamento_taxa_rs').removeAttr('checked');
+
+                $('.tipo_pagamento_taxa_pontos').attr('checked', 'checked');
+
+                if (hasClickedAtPayPrice === true) {
+                    $('.unchecked-rs').css('display', 'inline-block');
+                    $('.checked-rs').css('display', 'none');
+
+                    $('.unchecked-pontos').css('display', 'none');
+                    $('.checked-pontos').css('display', 'inline-block');
+
+                    $('.tipo_pagamento_taxa_pontos').click();
+                }
+            }
+
+            $('#parcelamento').html('');
+
+            $.each(parcelamento, function (index, value) {
+                console.log('min range: ' + $('#payment_range').attr('min'));
+                if ($('#payment_range').attr('min') == '0') {
+                    $('#finalizar_pedido').addClass('inactive_button_trigg');
+                    $('.finalizar_pedido_aereo').addClass('inactive_button_trigg');
+                }
+
+                var rangeVal = $('#payment_range').attr('max') - $('#payment_range').val();
+                var rangeMax = $('#payment_range').attr('max');
+
+                var price = (rangeMax - rangeVal) * valorFatorTrigg;
+
+                if (price == 0) {
+                    $('.payment_type').hide();
+                    orderCardButton();
+                    return;
+                }
+
+                $('.payment_type').show();
+                orderCardButton();
+
+                //minReaisParcelamento
+
+                // Valor da parcela
+                var installmentPrice = price / value['number'];
+
+                console.log(value);
+
+                if (value['number'] > 1 && installmentPrice < minReaisParcelamento) {
+                    return false;
+                }
+
+                var opt = '<option value="' + value['number'] + '">';
+
+                opt += value['number'] + ' x ';
+
+                /*
+                if (value['number'] > 1) {
+                    opt += 's';
+                }
+                */
+
+                if (value['interest'] > 0) {
+                    var i;
+                    var loopC = value['number'] + 1;
+                    for (i = 1; i < loopC; i++) {
+                        var iCalc = (value['interest'] / 100) / 100.00;
+                        installmentPrice = price * iCalc * Math.pow((1 + iCalc), value['number']) / (Math.pow((
+                            1 + iCalc), value['number']) - 1);
+                    }
+                }
+
+                opt += ' de R$ ' + number_format(installmentPrice, 2, ',', '.');
+
+                if (value['interest'] == 0) {
+                    opt += ' - sem juros';
+                } else {
+                    opt += ' (R$ ' + number_format(installmentPrice * value['number'], 2, ',', '.') +
+                        ') - Juros de ' + number_format(value['interest'] / 100, 2, ',', '.') + '% a.m.';
+                }
+
+                opt += '</option>';
+
+                $('#parcelamento').append(opt);
+            });
+
+            orderCardButton();
+        }
+
+        $('#payment_range').bind('change', function (e) {
+            calculaParcelamento();
+        });
+
+        $(this).ready(function () {
+            if ($('#pagename').val() == 'flight-resume') {
+                calculaParcelamento();
+            }
+        });
+
+        $('#cardSelector').change(function (e) {
+            $('#selectedCard').val($(this).val());
+
+            if ($(this).val() == '') {
+                $('.doOrderFormCard').show();
+                $('#cardForm input[type=text]').removeAttr('disabled', 'disabled');
+            } else {
+                $('.doOrderFormCard').hide();
+                $('#cardForm input[type=text]').attr('disabled', 'disabled');
+            }
+        });
+
+        //window.waitOrder = true;
+
+        var cardHash = '';
+        var debug = false;
+
+        $('#finalizar_pedido').click(function (e) {
+            if ($(this).hasClass('inactive_button_trigg')) {
+                e.preventDefault();
+                $(this).blur();
+                stopLoading();
+                return false;
+            }
+
+            startLoading();
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+            }
+
+            if ($('#payment_range').val() > 0) {
+                var card = {}
+                card.card_holder_name = $('#doOrderForm input[name=card_owner]').val();
+                card.card_expiration_date = $('#doOrderForm input[name=card_expiration]').val();
+                card.card_number = $('#doOrderForm input[name=card_number]').val();
+                card.card_cvv = $('#doOrderForm input[name=card_cvv]').val();
+
+                //$('#doAereoForm input[name=card_owner],#doAereoForm input[name=card_expiration],#doAereoForm input[name=card_number]#doAereoForm input[name=card_cvv]').attr('disabled','disabled');
+
+                try {
+                    // pega os erros de validação nos campos do form e a bandeira do cartão
+                    var cardValidations = pagarme.validate({
+                        card: card
+                    });
+                } catch (e) {
+                    console.log('Transação não autorizada. Verifique os dados do cartão.');
+                    alert('Transação não autorizada. Verifique os dados do cartão.');
+                    stopLoading();
+                }
+
+                console.log(cardValidations);
+
+                //Então você pode verificar se algum campo não é válido
+                if (!cardValidations.card.card_number) {
+                    alert('Transação não autorizada. Verifique os números do cartão.');
+                    stopLoading();
+                    console.log('Transação não autorizada. Verifique os números do cartão.');
+                } else if (!cardValidations.card.card_holder_name) {
+                    alert('Transação não autorizada. Verifique o nome do titular do cartão.');
+                    stopLoading();
+                    console.log('Transação não autorizada. Verifique o nome do titular do cartão.');
+                } else if (!cardValidations.card.card_expiration_date) {
+                    alert('Transação não autorizada. Verifique a data de vencimento do cartão.');
+                    stopLoading();
+                    console.log('Transação não autorizada. Verifique a data de vencimento do cartão.');
+                } else if (!cardValidations.card.card_cvv) {
+                    alert('Transação não autorizada. Verifique o código de segurança do cartão.');
+                    stopLoading();
+                    console.log('Transação não autorizada. Verifique o código de segurança do cartão.');
+                } else {
+                    console.log('cartão validado');
+                    if (deviceOs != 'android') {
+                        pagarme.client.connect({
+                                encryption_key: 'ek_test_gZduqWm5rAhMMiT58rlFZCocdcecxd'
+                            })
+                            .then(client => client.security.encrypt(card))
+                            .then(function (card_hash) {
+                                console.log('Hash do cartao');
+                                console.log(card_hash);
+
+                                cardHash = card_hash;
+
+                                $('#card_hash').val(card_hash);
+
+                                completeCheckout();
+                            })
+                    } else {
+                        completeCheckout();
+                    }
+                }
+            } else {
+                completeCheckout();
+            }
+
+            return false;
+        });
+
+        function getAndroidCardHash(hash) {
+            console.log('Recebi o HASH que o Android gerou em JAVA');
+            console.log(hash);
+            cardHash = hash;
+            $('#card_hash').val(cardHash);
+            completeCheckout();
+        }
+
+        function getAndroidCardHashAereo(hash) {
+            console.log('Recebi o HASH que o Android gerou em JAVA');
+            console.log(hash);
+            cardHash = hash;
+            $('#card_hash').val(cardHash);
+            completeCheckoutAereo();
+        }
+
+        function completeCheckout() {
+            if (!debug) {
+                $('#doOrderForm input[name=card_owner],#doOrderForm input[name=card_expiration],#doOrderForm input[name=card_number],#doOrderForm input[name=card_cvv]')
+                    .attr('disabled', 'disabled');
+            }
+
+            if (deviceOs == 'ios') {
+                extPostData = $('#doOrderForm').serialize();
+                window.webkit.messageHandlers.functionListener.postMessage("finalizarPedidoTrigg");
+            } else if (deviceOs == 'android' && cardHash == '') {
+                if (window.Android) {
+                    console.log('Antes de chamar Android');
+                    window.Android.generateHash('ek_test_gZduqWm5rAhMMiT58rlFZCocdcecxd', $(
+                            '#doOrderForm input[name=card_owner]').val(), $('#doOrderForm input[name=card_number]')
+                        .val(), $('#doOrderForm input[name=card_cvv]').val(), $(
+                            '#doOrderForm input[name=card_expiration]').val().replace('/', ''), 'getAndroidCardHash'
+                    );
+                    console.log('Depois de chamar Android');
+                } else {
+                    console.log('Nao encontrou a lib de Android');
+                }
+            } else {
+                console.log('Chamando POST ajax');
+
+                console.log($('#doOrderForm').serialize());
+
+                console.log('Header trigg_pagarme_hash:');
+                console.log(cardHash);
+
+                $.ajax({
+                    url: $('#doOrderForm').attr('action'),
+                    dataType: 'html',
+                    type: 'POST',
+                    data: $('#doOrderForm').serialize(),
+                    headers: {
+                        'trigg_post_content': $('#doOrderForm').serialize(),
+                        'trigg_pagarme_hash': cardHash,
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'OS': deviceOs,
+                    },
+                    complete: function () {
+                        $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                    },
+                    success: function (data) {
+                        console.log('Retorno do AJAX:');
+
+                        data = $.parseJSON(data);
+
+                        console.log(data);
+
+                        //return false;
+
+                        console.log(data.status);
+                        console.log(data.msg);
+
+
+                        if (data.status == 'ok') {
+                            console.log('chamando schema');
+                            var schema = 'lltrigg://redeem?id=' + data.id + '&value=' + data.value +
+                                '&type=' + data.type;
+
+                            stopLoading();
+
+                            window.location = schema;
+                            //$('#finalizar_pedido').unbind('click');
+                            //$('#finalizar_pedido').attr('href', schema);
+                        } else {
+                            alert(data.msg)
+                            stopLoading();
+                            window.location = '/app/loyalty/webview/trigg/loja/resumo';
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao enviar informações do pedido para a trigg.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/resumo';
+                    }
+                });
+            }
+
+            $('#doOrderForm input[name=card_owner],#doOrderForm input[name=card_expiration],#doOrderForm input[name=card_number],#doOrderForm input[name=card_cvv]')
+                .removeAttr('disabled');
+        }
+
+        function completeCheckoutAereo() {
+            if (!debug) {
+                $('#doAereoForm input[name=card_owner],#doAereoForm input[name=card_expiration],#doAereoForm input[name=card_number],#doAereoForm input[name=card_cvv]')
+                    .attr('disabled', 'disabled');
+            }
+
+            if (deviceOs == 'ios') {
+                $.ajax({
+                    type: "POST",
+                    headers: {
+                        'trigg_post_content': $('#doAereoForm').serialize(),
+                        'trigg_pagarme_hash': cardHash,
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'OS': deviceOs,
+                    },
+                    url: $('#doAereoForm').attr('action') + '?ajax=true',
+                    data: $('#doAereoForm').serialize(),
+                    complete: function () {
+                        //$('#finalizar_pedido').text('FINALIZAR PEDIDO');
+                        $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                    },
+                    success: function (data) {
+                        if (data.status == 'ok') {
+                            console.log('redirecionando');
+                            let schema = data.redirect_url;
+
+                            stopLoading();
+
+                            window.location = schema;
+                        } else {
+                            console.log('redirecionando');
+                            let schema = data.redirect_url;
+
+                            stopLoading();
+
+                            window.location = schema;
+                        }
+                    },
+                    error: function (xhr, er) {
+                        console.log(xhr);
+                        console.log(er);
+                        alert('Ocorreu um erro ao enviar informações do pedido.')
+                        stopLoading();
+                    }
+                });
+            } else if (deviceOs == 'android' && cardHash == '') {
+                if (window.Android) {
+                    console.log('Antes de chamar Android');
+                    window.Android.generateHash('ek_test_gZduqWm5rAhMMiT58rlFZCocdcecxd', $(
+                            '#doAereoForm input[name=card_owner]').val(), $('#doAereoForm input[name=card_number]')
+                        .val(), $('#doAereoForm input[name=card_cvv]').val(), $(
+                            '#doAereoForm input[name=card_expiration]').val().replace('/', ''),
+                        'getAndroidCardHashAereo');
+                    console.log('Depois de chamar Android');
+                } else {
+                    console.log('Nao encontrou a lib de Android');
+                }
+            } else {
+                console.log('Chamando POST ajax');
+
+                console.log($('#doAereoForm').serialize());
+
+                console.log('Header trigg_pagarme_hash:');
+                console.log(cardHash);
+
+                $.ajax({
+                    url: $('#doAereoForm').attr('action') + '?ajax=true',
+                    dataType: 'html',
+                    type: 'POST',
+                    data: $('#doAereoForm').serialize(),
+                    headers: {
+                        'trigg_post_content': $('#doAereoForm').serialize(),
+                        'trigg_pagarme_hash': cardHash,
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'OS': deviceOs,
+                    },
+                    complete: function () {
+                        //$('#finalizar_pedido').text('FINALIZAR PEDIDO');
+                        $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                    },
+                    success: function (data) {
+                        data = $.parseJSON(data);
+
+                        console.log('Retorno do AJAX:');
+                        console.log(data);
+                        console.log(data.status);
+
+                        if (data.status == 'ok') {
+                            console.log('redirecionando');
+                            let schema = data.redirect_url;
+
+                            stopLoading();
+
+                            window.location = schema;
+                        } else {
+                            console.log('redirecionando');
+                            let schema = data.redirect_url;
+
+                            stopLoading();
+
+                            window.location = schema;
+                        }
+                    },
+                    error: function (xhr, er) {
+                        console.log(xhr);
+                        console.log(er);
+                        alert('Ocorreu um erro ao enviar informações do pedido.')
+                        stopLoading();
+                    }
+                });
+            }
+
+            $('#doAereoForm input[name=card_owner],#doAereoForm input[name=card_expiration],#doAereoForm input[name=card_number],#doAereoForm input[name=card_cvv]')
+                .removeAttr('disabled');
+        }
+
+        $('.card_number_mask').mask('0000 0000 0000 0000');
+        $('.card_expiration').mask('00/00');
+
+        var xhrAereo;
+
+        var options = {
+
+            url: function (q) {
+                return "/trigg/loja/buscar?q=" + q;
+            },
+
+            getValue: "name",
+        };
+
+        $('#search_input').easyAutocomplete(options);
+
+        $('.modal-search .easy-autocomplete').css('width', '100%');
+
+        $('.autocomplete-geolocation-from').keyup(function () {
+            $('#eac-container-geolocation-from ul').html('');
+
+            if ($(this).val().length < 3) {
+                if (typeof xhrAereo !== 'undefined') xhrAereo.abort();
+                return;
+            }
+
+            if (typeof xhrAereo !== 'undefined') xhrAereo.abort();
+
+            var method = 'GET';
+
+            if (deviceOs == 'android') {
+                method = 'POST';
+            } else if (deviceOs == 'ios') {
+                window.webkit.messageHandlers.functionListener.postMessage("getIosToken");
+            }
+
+            xhrAereo = $.ajax({
+                url: "/trigg/passagens-aereas/geolocation",
+                dataType: 'html',
+                type: method,
+                data: {
+                    q: $('.autocomplete-geolocation-from').val(),
+                },
+                headers: {
+                    'Authorization': iosToken,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                    'trigg_post_content': 'q=' + $('.autocomplete-geolocation-from').val(),
+                },
+                success: function (response) {
+                    data = $.parseJSON(response);
+
+                    console.log(data);
+
+                    $.each(data, function (i, item) {
+                        if (i > 4) return;
+
+                        console.log(item);
+                        $('#eac-container-geolocation-from ul').show().append(
+                            '<li attr-code="' + item.code + '" attr-main-code="' + item
+                            .main_code + '" attr-country-code="' + item.country_code +
+                            '"><a class="eac-item">' + item.name + '</a></li>');
+                    });
+
+                    $('#eac-container-geolocation-from li a').unbind('click').unbind('mouseover')
+                        .unbind('mouseout').click(function () {
+
+                            console.log($(this).text());
+
+                            $('#from-code').val($(this).parent().attr('attr-code'));
+                            $('#from-main-code').val($(this).parent().attr('attr-main-code'));
+                            $('#from-country-code').val($(this).parent().attr(
+                                'attr-country-code'));
+                            $('#from-name').val($(this).text());
+                            $('#inputFromName').val($(this).text());
+
+                            $('#eac-container-geolocation-from ul').hide();
+                        }).mouseover(function () {
+                            $(this).parent().addClass('selected');
+                        }).mouseout(function () {
+                            $(this).parent().removeClass('selected');
+                        });
+                }
+            });
+        });
+
+        var xhrAereo2;
+
+        $('.autocomplete-geolocation-to').keyup(function () {
+            $('#eac-container-geolocation-to ul').html('');
+
+            if ($(this).val().length < 3) {
+                if (typeof xhrAereo2 !== 'undefined') xhrAereo2.abort();
+                return;
+            }
+
+            if (typeof xhrAereo2 !== 'undefined') xhrAereo2.abort();
+
+            var method = 'GET';
+
+            if (deviceOs == 'android') {
+                method = 'POST';
+            } else if (deviceOs == 'ios') {
+                window.webkit.messageHandlers.functionListener.postMessage("getIosToken");
+            }
+
+            xhrAereo2 = $.ajax({
+                url: "/trigg/passagens-aereas/geolocation",
+                dataType: 'html',
+                type: method,
+                data: {
+                    q: $('.autocomplete-geolocation-to').val(),
+                },
+                headers: {
+                    'Authorization': iosToken,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                    'trigg_post_content': 'q=' + $('.autocomplete-geolocation-to').val(),
+                },
+                success: function (response) {
+                    data = $.parseJSON(response);
+
+                    console.log(data);
+
+                    $.each(data, function (i, item) {
+                        if (i > 4) return;
+
+                        console.log(item);
+                        $('#eac-container-geolocation-to ul').show().append(
+                            '<li attr-code="' + item.code + '" attr-main-code="' + item
+                            .main_code + '" attr-country-code="' + item.country_code +
+                            '"><a class="eac-item">' + item.name + '</a></li>');
+                    });
+
+                    $('#eac-container-geolocation-to li a').unbind('click').unbind('mouseover')
+                        .unbind('mouseout').click(function () {
+
+                            console.log($(this).text());
+
+                            $('#to-code').val($(this).parent().attr('attr-code'));
+                            $('#to-main-code').val($(this).parent().attr('attr-main-code'));
+                            $('#to-country-code').val($(this).parent().attr(
+                                'attr-country-code'));
+                            $('#to-name').val($(this).text());
+                            $('#inputToName').val($(this).text());
+
+                            $('#eac-container-geolocation-to ul').hide();
+                        }).mouseover(function () {
+                            $(this).parent().addClass('selected');
+                        }).mouseout(function () {
+                            $(this).parent().removeClass('selected');
+                        });
+                }
+            });
+        });
+
+        $('input[name=trip_type]').change(function (e) {
+            if ($('.trip_type_2').is(':checked')) {
+                $('.box_type2').hide();
+                $('input[name=from_date]').removeAttr('max');
+            } else {
+                $('.box_type2').show();
+                $('input[name=from_date]').attr('max', $('input[name=to_date]').val());
+            }
+        });
+
+        if ($('#trip-type').val() == 2) {
+            $('.box_type2').hide();
+            $('input[name=from_date]').removeAttr('max');
+        } else {
+            $('.box_type2').show();
+            $('input[name=from_date]').attr('max', $('input[name=to_date]').val());
+        }
+
+        if (deviceOs != 'ios') {
+            $('input[name=from_date]').change(function () {
+                $('input[name=to_date]').attr('min', $(this).val());
+            });
+
+            $('input[name=to_date]').change(function () {
+                $('input[name=from_date]').attr('max', $(this).val());
+            });
+        }
+
+        $('#submitAereo').submit(function () {
+            startLoading();
+
+            console.log('Aereo 1');
+
+            if ($(".autocomplete-geolocation-from").val() == $(".autocomplete-geolocation-to").val() || $(
+                    '#from-main-code').val() == $('#to-main-code').val()) {
+                console.log('Aereo 2');
+                alert("O local de destino deve ser diferente do local de origem.");
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 3');
+
+            if ($('#from-code').val() == "") {
+                console.log('Aereo 4');
+                alert('Selecione um aeroporto de origem.');
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 5');
+
+            if ($('#to-code').val() == "") {
+                console.log('Aereo 6');
+                alert('Selecione um aeroporto de destino.');
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 7');
+
+            if ((parseInt($('#adults').val()) == 0 && parseInt($('#youngs').val()) == 0 && parseInt($(
+                    '#children').val()) == 0) || (parseInt($('#adults').val()) == 0 && parseInt($('#baby')
+                    .val()) > 0)) {
+                console.log('Aereo 8');
+                alert('Selecione o número de passageiros.');
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 9');
+
+            if ((parseInt($('#adults').val()) + parseInt($('#children').val()) + parseInt($('#baby').val())) >
+                8) {
+                console.log('Aereo 10');
+                alert('Selecione no máximo 8 passageiros.');
+                stopLoading();
+                return false;
+            }
+
+            var type = 1;
+            console.log('Aereo 11');
+            $.each($('input[name=trip_type]'), function (key, value) {
+                if ($(this).is(':checked')) {
+                    type = $(this).val();
+                }
+            });
+
+            console.log('Aereo 12');
+
+            if ($('#from_date').val() == "" || ($('#to_date').val() == "" && type == 1)) {
+                console.log('Aereo 13');
+                alert('Selecione a data do voo.');
+                stopLoading();
+                return false;
+            }
+
+
+            console.log('minFlightDate: ' + minFlightDate);
+
+            minFlightDate = new Date(minFlightDate);
+            maxFlightDate = new Date(maxFlightDate);
+
+            console.log('maxFlightDate: ' + maxFlightDate);
+
+            console.log('Aereo 15');
+
+            console.log('From data VAL: ' + $('#selectDateFrom').val());
+            console.log('To data VAL: ' + $('#selectDateTo').val());
+
+            var fromDate = new Date($('#selectDateFrom').val());
+            var toDate = new Date($('#selectDateTo').val());
+
+            console.log('fromDate: ' + fromDate);
+            console.log('toDate: ' + toDate);
+
+            console.log('Aereo 16');
+
+            var dd = minFlightDate.getDate();
+            var mm = minFlightDate.getMonth() + 1;
+
+            console.log('dd: ' + dd);
+            console.log('mm: ' + mm);
+
+            console.log('Aereo 17');
+
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            var yyyy = minFlightDate.getFullYear();
+
+            console.log('yyyy: ' + yyyy);
+
+            console.log('Aereo 18');
+
+            var minBrDate = dd + '/' + mm + '/' + yyyy;
+
+            var dd = maxFlightDate.getDate();
+            var mm = maxFlightDate.getMonth() + 1;
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            var yyyy = maxFlightDate.getFullYear();
+
+            console.log('Aereo 19');
+
+            var maxBrDate = dd + '/' + mm + '/' + yyyy;
+
+            console.log('fromDate' + fromDate);
+            console.log('toDate' + toDate);
+            console.log('minFlightDate' + minFlightDate);
+            console.log('maxFlightDate' + maxFlightDate);
+
+            if (fromDate < minFlightDate) {
+                console.log('Aereo 20');
+                alert('A data de partida deve ser superior a ' + minBrDate + '!');
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 21');
+
+            if (fromDate > maxFlightDate) {
+                console.log('Aereo 22');
+                alert('A data de partida deve ser no máximo ' + maxBrDate + '!');
+                stopLoading();
+                return false;
+            }
+
+            console.log('Aereo 23');
+
+            if (type == 1) {
+
+                if (toDate < fromDate || toDate < minBrDate) {
+                    console.log('Aereo 25');
+                    alert('A data de retorno deve ser após a data de partida!');
+                    stopLoading();
+                    return false;
+                }
+
+                console.log('Aereo 25');
+
+                if (toDate > maxFlightDate) {
+                    console.log('Aereo 26');
+                    alert('A data de retorno deve ser no máximo ' + maxBrDate + '!');
+                    stopLoading();
+                    return false;
+                }
+
+            }
+
+            console.log('Aereo 27');
+
+            if (deviceOs != 'ios') {
+                $('#from-date').val($('#from_date').val());
+                $('#to-date').val($('#to_date').val());
+                console.log('Aereo 28');
+            }
+
+            console.log('Aereo 29');
+
+            $('#trip-type').val(type);
+
+            if ($('#direct_flights').is(':checked')) {
+                $('#direct').val('1');
+            } else {
+                $('#direct').val('0');
+            }
+
+            console.log('Aereo 30');
+
+            $('#cabin').val($('#class').val());
+
+        });
+
+        $(".escala_open").click(function (event) {
+            $('#escalas-content').html($('#escala-' + $(this).attr('attr-segment')).html());
+            $(".modal-escala").show();
+
+            return false;
+        });
+
+        $(".menu_open").click(function (event) {
+            $(".modal-menu").show();
+
+            return false;
+        });
+
+        $('.btnRegulamento').click(function () {
+            $('.modal-regulamento').show();
+        });
+
+        $(".address-update").click(function (event) {
+
+            $(".modal-endereco-update").show();
+            var uuid = $(this).attr('attr-uuid');
+
+
+            $('#uuid-update').val(uuid);
+            $('#label-update').val($("#label-" + uuid).val());
+            $('#add-cep-update').val($("#cep-" + uuid).val());
+            $('#cityAd-update').val($("#city-" + uuid).val());
+            $('#cityAd2-update').val($("#city-" + uuid).val());
+            $('#stateAd-update').val($("#state-" + uuid).val());
+            $('#stateAd2-update').val($("#state-" + uuid).val());
+            $('#stAd-update').val($("#address_line1-" + uuid).val());
+            $('#neighComp-update').val($("#address_line2-" + uuid).val());
+            $('#complement-update').val($("#address_line3-" + uuid).val());
+            $('#nmAd-update').val($("#number-" + uuid).val());
+            $('#trigg_id-update').val($("#trigg_id-" + uuid).val());
+
+        });
+
+        $('#transfer-atomos').keyup(function (e) {
+            $(this).val(parseInt($(this).val()));
+            $('#transfer-atomos-convert').text(number_format(parseInt($(this).val() * transferFator), 0, "",
+                "."))
+        });
+
+        $('#product-add').submit(function (e) {
+            startLoading();
+
+            if ($('#post-hash').val() != '') {
+                return true;
+            }
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+            }
+
+            var data = '';
+
+            if (deviceOs == 'ios') {
+                window.webkit.messageHandlers.functionListener.postMessage("putInCartAjax");
+            } else {
+                $.ajax({
+                    url: $('#product-add').attr('action'),
+                    dataType: 'html',
+                    type: 'POST',
+                    data: $('#product-add').serialize(),
+                    headers: {
+                        'trigg_post_content': $('#product-add').serialize(),
+                    },
+                    success: function (response) {
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        return false;
+
+                        data = $.parseJSON(response);
+
+                        if (data.status != 'ok') {
+                            alert('Ocorreu um erro ao adicionar o produto na sacola.')
+                            stopLoading();
+                            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                        } else {
+                            $('#post-hash').val(data.post_hash);
+                            $('#product-add').submit();
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao adicionar o produto na sacola.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+            }
+
+            return false;
+        });
+
+        $('#addAddress').submit(function (e) {
+            startLoading();
+
+            $('#addAddress input').removeAttr('disabled', 'disabled');
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                var objIos = {
+                    'method': "POST",
+                    'data': $('#addAddress').serialize(),
+                    'path': $('#addAddress').attr('action'),
+                };
+
+                window.webkit.messageHandlers.iosListener.postMessage(objIos);
+
+                return false;
+            } else {
+                $.ajax({
+                    url: $('#addAddress').attr('action'),
+                    dataType: 'html',
+                    type: 'POST',
+                    data: $('#addAddress').serialize(),
+                    headers: {
+                        'trigg_post_content': $('#addAddress').serialize(),
+                    },
+                    complete: function () {
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+
+                return false;
+            }
+        });
+
+        $('#changeAddress').submit(function (e) {
+            startLoading();
+
+            $('#changeAddress input').removeAttr('disabled', 'disabled');
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+
+                var objIos = {
+                    'method': "POST",
+                    'data': $('#changeAddress').serialize(),
+                    'path': $('#changeAddress').attr('action'),
+                };
+
+                window.webkit.messageHandlers.iosListener.postMessage(objIos);
+
+                return false;
+            } else {
+                $.ajax({
+                    url: $('#changeAddress').attr('action'),
+                    dataType: 'html',
+                    type: 'POST',
+                    data: $('#changeAddress').serialize(),
+                    headers: {
+                        'trigg_post_content': $('#changeAddress').serialize(),
+                    },
+                    complete: function () {
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                });
+
+                return false;
+            }
+        });
+
+        $('#formTransfer').submit(function (e) {
+            $('#container-error').hide();
+            startLoading();
+
+            var at = parseInt($('#transfer-atomos').val());
+            if (at > saldoDisponivel) {
+                let message = "Quantidade de pontos trigg indisponível.";
+                $('#container-error').text(message);
+                $('#container-error').show();
+                stopLoading();
+                return false;
+            }
+
+            if (at % transferMult != 0) {
+                let message = "O valor para transferência deve ser múltiplo de " + number_format(transferMult,
+                    0, "", ".") + "!";
+                $('#container-error').text(message);
+                $('#container-error').show();
+                stopLoading();
+                return false;
+            }
+
+            if (at < transferMin) {
+                let message = "O valor mínimo para transferência é de " + number_format(transferMin, 0, "",
+                    ".") + " pontos Trigg.";
+                $('#container-error').text(message);
+                $('#container-error').show();
+                stopLoading();
+                return false;
+            }
+
+            if (at > transferMax) {
+                let message = "O valor máximo para transferência é de" + number_format(transferMax, 0, "",
+                    ".") + " pontos Trigg.";
+                $('#container-error').text(message);
+                $('#container-error').show();
+                stopLoading();
+                return false;
+            }
+
+            var data = '';
+
+            $.ajax({
+                type: "POST",
+                headers: {
+                    'trigg_post_content': $('#formTransfer').serialize(),
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'OS': deviceOs,
+                },
+                url: $('#formTransfer').attr('action'),
+                data: $('#formTransfer').serialize(),
+                complete: function () {
+                    $('#submitTransfer').removeAttr('disabled', 'disabled');
+                },
+                success: function (data) {
+                    if (data.status == 'ok') {
+                        console.log('redirecionando');
+                        let schema = data.redirect_url;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    } else {
+                        console.log('redirecionando');
+                        let schema = data.redirect_url;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    }
+                },
+                error: function (xhr, er) {
+                    console.log(xhr);
+                    console.log(er);
+                    alert('Ocorreu um erro ao enviar informações do pedido.')
+                    stopLoading();
+                }
+            });
+            return false;
+        });
+
+        $('#submitTransfer').click(function (e) {
+            $('#formTransfer').submit();
+            return false;
+        });
+
+        if ($('.bottom_action')) {
+            var h = $('.bottom_action').height();
+
+            $('.has_bottom_action').css('margin-bottom', (h + 50) + 'px');
+        }
+
+        $('.click_emergency').change(function (e) {
+            if ($(this).is(':checked')) {
+                $('.inputs_emergency_contact').show();
+            } else {
+                $('.inputs_emergency_contact').hide();
+            }
+        });
+
+        /*
+        function waitFunc() {
+            if (window.waitOrder) {
+                setTimeout(waitFunc, 100);
+            }
+        }
+        */
+
+        function autoCompletePassengerInit() {
+
+            $("body").find(".autoCompletePassenger").each(function () {
+
+                var $input = $(this);
+
+                var uniq_id = Math.random().toString(36).substr(2, 9);
+
+                $($input).prop('id', uniq_id);
+
+                if ($input.next(".easy-autocomplete-container").length == 0 && $input.is(":visible")) {
+
+                    var options = {
+
+                        data: myPassengers,
+
+                        getValue: "FirstName",
+
+                        list: {
+                            onSelectItemEvent: function (e) {
+
+                                var data = $("#" + uniq_id).getSelectedItemData();
+                                $("#" + uniq_id).closest('.passenger-info').find('.passagens-input')
+                                    .each(function (index, el) {
+
+                                        console.log(el, $(el).attr('name'));
+
+                                        switch ($(el).attr('name')) {
+
+                                            case 'Passengers[FirstName][]':
+                                                $(el).val(data.FirstName);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[LastName][]':
+                                                $(el).val(data.LastName);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[IdType][]':
+                                                $(el).val(data.IdType);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[Identification][]':
+                                                $(el).val(data.Identification);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[Email][]':
+                                                $(el).val(data.Email);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[PhoneNumber][]':
+                                                $(el).val(data.PhoneNumber);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[SaveInformation][]':
+                                                $(el).prop('checked', true);
+                                                break;
+
+                                            case 'Passengers[EmergencyContact][]':
+
+                                                if (data.EmergencyContact == 1) {
+
+                                                    $(el).prop('checked', true);
+                                                    $(el).closest('.passenger-info').find(
+                                                        ".inputs_emergency_contact").show();
+
+                                                }
+
+                                                break;
+
+                                            case 'Passengers[EmergencyContactName][]':
+                                                $(el).val(data.EmergencyContactName);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[EmergencyContactPhoneNumber][]':
+                                                $(el).val(data.EmergencyContactPhoneNumber);
+                                                $(el).parents(".flight_input").find(
+                                                    '.flight_input_label').animate({
+                                                    top: 0
+                                                }, 100);
+                                                break;
+
+                                            case 'Passengers[uuid][]':
+                                                $(el).val(data.uuid);
+                                                break;
+
+
+                                        }
+
+                                    });
+
+
+                            }
+                        },
+                    };
+
+                    $input.easyAutocomplete(options);
+
+                }
+
+            });
+
+        }
+
+        jQuery(document).ready(function ($) {
+            //autoCompletePassengerInit();
+            $(".input_passengers").focus(function () {
+                $(this).blur();
+            });
+        });
+
+        $('.btn_program_more').click(function (e) {
+            var id = $(this).attr('attr-id');
+
+            if (!$('#' + id).hasClass('opened')) {
+                $('#' + id).slideDown();
+                $('#' + id).addClass('opened');
+            } else {
+                $('#' + id).slideUp();
+                $('#' + id).removeClass('opened');
+
+            }
+        });
+
+        jQuery(window).ready(function () {
+            jQuery("#points_transfer_range").trigger('input');
+        });
+
+        jQuery("#points_transfer_range, #payment_range").focus(function () {
+            $(this).blur();
+        });
+
+        jQuery("#points_transfer_range").on('input', function () {
+            var resto = $(this).val() % transferMult;
+
+            console.log($(this).val());
+            console.log(resto);
+            console.log(transferMult / 2);
+
+            var result = $(this).val();
+
+            if (resto >= (transferMult / 2)) {
+                result = parseInt(result) + parseInt((transferMult - resto));
+            } else {
+                result = parseInt(result) - parseInt(resto);
+            }
+
+            if (result > parseInt($(this).attr('max'))) {
+                result = parseInt($(this).val()) - parseInt(resto);
+            }
+
+            console.log(result);
+
+            $('#show_atomos').text(number_format(result, 0, "", "."));
+            $('#transfer-atomos').val(result);
+
+            $('#show_multiplus').text(number_format(parseInt(result * transferFator), 0, "", "."));
+        });
+
+        jQuery('.data-focus').each(function () {
+            if ($(this).val() != "") $(this).focus();
+        });
+
+        $('input[name=from]').focus();
+
+        $(window).scroll(function () { //evento de scroll na janela
+            if ($(window).scrollTop() + $(window).height() > $(document).height() -
+                100) { //atingido o final da página
+                if ($('.submitAereoPurchase').length > 0) {
+                    loadMoreFlights();
+                }
+
+                if ($('.box-item').length > 0) {
+                    loadMoreContent();
+                }
+            }
+        });
+
+        var loadMoreFlightRunning = false;
+
+        var scrollPath = '';
+
+        function loadMoreFlights() {
+            console.log('loadMoreFlights');
+
+            if (($('.submitAereoPurchase').length > 0 && $('.submitAereoPurchase').length % 20 != 0) ||
+                loadMoreFlightRunning === true) {
+                return;
+            }
+
+            loadMoreFlightRunning = true;
+
+            jQuery('.general-loading').show();
+            $('html').css({
+                'overflow': 'hidden',
+                'height': '100%'
+            });
+
+            document.ontouchmove = function (e) {
+                e.preventDefault();
+            }
+
+            loadAereoPath = decodeEntities(loadAereoPath);
+
+            console.log(loadAereoPath);
+
+            path = loadAereoPath;
+
+            if (loadAereoPath.indexOf('?') > 0) {
+                path += '&';
+            } else {
+                path += '?';
+            }
+
+            path += 'ajax_page=' + loadMorePage;
+
+            scrollPath = path;
+
+            if (deviceOs == 'ios') {
+                window.webkit.messageHandlers.functionListener.postMessage("loadMoreAereoAjax");
+            } else {
+                $.ajax({
+                    url: path,
+                    dataType: 'html',
+                    type: 'POST',
+                    headers: {
+                        'trigg_post_content': '',
+                    },
+                    success: function (data) {
+                        $("#putLoadMoreContent").before(data);
+                        jQuery('.general-loading').hide();
+
+                        $('html').css({
+                            'overflow': 'auto',
+                            'height': 'auto'
+                        });
+
+                        document.ontouchmove = function (e) {
+                            return true;
+                        }
+
+                        aereoReloadFc();
+
+                        loadMoreFlightRunning = false;
+                    }
+                });
+            }
+
+            aereoReloadFc();
+
+            loadMorePage++;
+
+            return false;
+        }
+
+        var loadMoreContentRunning = false;
+
+        function loadMoreContent() {
+            console.log('loadMoreContent');
+
+            if (($('.box-item').length > 0 && $('.box-item').length % 20 != 0) || loadMoreContentRunning === true) {
+                return;
+            }
+
+            loadMoreContentRunning = true;
+
+            jQuery('.general-loading').show();
+            $('html').css({
+                'overflow': 'hidden',
+                'height': '100%'
+            });
+
+            document.ontouchmove = function (e) {
+                e.preventDefault();
+            }
+
+            loadContentPath = decodeEntities(loadContentPath);
+
+            console.log('loadContentPath: ' + loadContentPath);
+
+            path = loadContentPath;
+
+            if (loadContentPath.indexOf('?') > 0) {
+                path += '&';
+            } else {
+                path += '?';
+            }
+
+            path += 'ajax_page=' + loadMorePage;
+
+            scrollPath = path;
+
+            if (deviceOs == 'ios') {
+                window.webkit.messageHandlers.functionListener.postMessage("loadMoreContentAjax");
+            } else {
+                $.ajax({
+                    url: path,
+                    dataType: 'html',
+                    type: 'POST',
+                    headers: {
+                        'trigg_post_content': '',
+                    },
+                    success: function (data) {
+                        $("#putLoadMoreContent").before(data);
+
+                        $('.product_do_star').unbind('click').click(function () {
+                            $.post("/trigg/loja/wishlist-ajax", {
+                                product: $(this).attr('attr-uuid')
+                            }, function (data) {
+                                if (data != 'true') {
+                                    alert('Ocorreu um erro!');
+                                    stopLoading();
+                                }
+                            });
+
+                            if ($(this).hasClass('far')) {
+                                $(this).removeClass('far');
+                                $(this).addClass('fas');
+
+                                var wishCount = parseInt($('#wishWidget span').text()) + 1;
+                                $('#wishWidget span').text(wishCount);
+                                $('#wishWidget').show();
+                            } else {
+                                $(this).removeClass('fas');
+                                $(this).addClass('far');
+
+                                var wishCount = parseInt($('#wishWidget span').text()) - 1;
+                                $('#wishWidget span').text(wishCount);
+                                if (wishCount < 1) $('#wishWidget').hide();
+                            }
+
+                            return false;
+                        });
+                        jQuery('.general-loading').hide();
+
+                        $('html').css({
+                            'overflow': 'auto',
+                            'height': 'auto'
+                        });
+
+                        document.ontouchmove = function (e) {
+                            return true;
+                        }
+
+                        loadMoreContentRunning = false;
+                    }
+                });
+            }
+
+            loadMorePage++;
+
+            return false;
+        }
+
+        $('#do_magic').click(function (e) {
+            window.webkit.messageHandlers.functionListener.postMessage("doMagicText");
+        });
+
+        function doMagicText(getString) {
+            $('#show_magic').text(getString);
+
+            $.ajax({
+                type: 'GET',
+                url: "/trigg/passagens-aereas/geolocation",
+                data: {
+                    q: 'SAO',
+                },
+                headers: {
+                    'Authorization': 'Bearer ' + getString,
+                },
+                success: function (data) {
+                    console.log(data);
+                    $('#show_magic').text(JSON.stringify(data));
+                }
+            });
+        }
+
+        function putInCartAjax(token) {
+            $.ajax({
+                type: 'POST',
+                url: $('#product-add').attr('action'),
+                data: $('#product-add').serialize(),
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                },
+                success: function (data) {
+                    window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    return false;
+
+                    data = $.parseJSON(data);
+
+                    if (data.status != 'ok') {
+                        alert('Ocorreu um erro ao adicionar o produto na sacola.')
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    } else {
+                        $('#post-hash').val(data.post_hash);
+                        $('#product-add').submit();
+                    }
+                }
+            });
+        }
+
+        function finalizarPedidoTrigg(token) {
+            console.log(extPostData);
+
+            $.ajax({
+                type: 'POST',
+                url: $('#doOrderForm').attr('action'),
+                data: extPostData,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                    'OS': 'IOS',
+                },
+                complete: function () {
+                    $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                },
+                success: function (data) {
+                    console.log(data);
+
+                    if (data.status == 'ok') {
+                        console.log('status ok');
+                        console.log(data);
+                        //alert(data);
+                        stopLoading();
+
+                        var schema = 'lltrigg://redeem?id=' + data.id + '&value=' + data.value + '&type=' +
+                            data.type;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    } else {
+                        alert(data.msg)
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/loja/resumo';
+                    }
+                },
+                error: function (xhr, er) {
+                    alert('Ocorreu um erro ao enviar informações do pedido para a Trigg.')
+                    stopLoading();
+                    window.location = '/app/loyalty/webview/trigg/loja/resumo';
+                }
+            });
+        }
+
+        function finalizarPedidoTriggAereo(token) {
+            console.log(extPostData);
+
+            $.ajax({
+                type: 'POST',
+                url: $('#doAereoForm').attr('action'),
+                data: extPostData,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                    'OS': 'IOS',
+                },
+                complete: function () {
+                    $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                },
+                success: function (data) {
+                    console.log(data);
+
+                    if (data.status == 'ok') {
+                        console.log('status ok');
+                        console.log(data);
+                        stopLoading();
+
+                        var schema = 'lltrigg://redeem?id=' + data.id + '&value=' + data.value + '&type=' +
+                            data.type;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    } else {
+                        alert(data.msg);
+                        stopLoading();
+                        window.location = '/app/loyalty/webview/trigg/passagens-aereas';
+                    }
+                },
+                error: function (xhr, er) {
+                    alert('Ocorreu um erro ao enviar informações do pedido para a Trigg.');
+                    stopLoading();
+                    window.location = '/app/loyalty/webview/trigg/passagens-aereas';
+                }
+            });
+        }
+
+        function loadMoreContentAjax(token) {
+            $.ajax({
+                type: 'POST',
+                url: scrollPath,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                },
+                success: function (data) {
+                    $("#putLoadMoreContent").before(data);
+
+                    $('.product_do_star').unbind('click').click(function () {
+                        $.post("/trigg/loja/wishlist-ajax", {
+                            product: $(this).attr('attr-uuid')
+                        }, function (data) {
+                            if (data != 'true') {
+                                alert('Ocorreu um erro!');
+                                stopLoading();
+                            }
+                        });
+
+                        if ($(this).hasClass('far')) {
+                            $(this).removeClass('far');
+                            $(this).addClass('fas');
+
+                            var wishCount = parseInt($('#wishWidget span').text()) + 1;
+                            $('#wishWidget span').text(wishCount);
+                            $('#wishWidget').show();
+                        } else {
+                            $(this).removeClass('fas');
+                            $(this).addClass('far');
+
+                            var wishCount = parseInt($('#wishWidget span').text()) - 1;
+                            $('#wishWidget span').text(wishCount);
+                            if (wishCount < 1) $('#wishWidget').hide();
+                        }
+
+                        return false;
+                    });
+                    jQuery('.general-loading').hide();
+
+                    $('html').css({
+                        'overflow': 'auto',
+                        'height': 'auto'
+                    });
+
+                    document.ontouchmove = function (e) {
+                        return true;
+                    }
+
+                    loadMoreContentRunning = false;
+                }
+            });
+        }
+
+        function loadMoreAereoAjax(token) {
+            $.ajax({
+                type: 'POST',
+                url: scrollPath,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                },
+                success: function (data) {
+                    $("#putLoadMoreContent").before(data);
+                    jQuery('.general-loading').hide();
+
+                    $('html').css({
+                        'overflow': 'auto',
+                        'height': 'auto'
+                    });
+
+                    document.ontouchmove = function (e) {
+                        return true;
+                    }
+
+                    aereoReloadFc();
+
+                    loadMoreFlightRunning = false;
+                }
+            });
+        }
+
+        function cartActionAjax(token) {
+            $.ajax({
+                type: 'POST',
+                url: "/app/loyalty/webview/trigg/loja/carrinho-ajax",
+                data: extPostData,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                },
+                success: function (data) {
+                    if (data != 'true') {
+                        alert('Ocorreu um erro!');
+                        stopLoading();
+                    } else {
+                        jQuery('.general-loading').show();
+                        $('html').css({
+                            'overflow': 'hidden',
+                            'height': '100%'
+                        });
+
+                        document.ontouchmove = function (e) {
+                            e.preventDefault();
+                        }
+
+                        window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                    }
+                },
+                error: function (xhr, er) {
+                    alert('Ocorreu um erro ao chamar a sacola.')
+                    stopLoading();
+                    window.location = '/app/loyalty/webview/trigg/loja/sacola';
+                }
+            });
+        }
+
+        function wishlistAjax(token) {
+            $.ajax({
+                type: 'POST',
+                url: "/trigg/loja/wishlist-ajax",
+                data: extPostData,
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Authorization-ll': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiNUVBM0M1MTJCNTBCNTQxNEM5OUJGMUU5MzdBODc4Qjc4REEzNkRGMkM1RTAzNEYwQ0I2QTAwRTAzMjc4MEVGRUIxODlCNjU0MkM2NkM4NjdCNUNDNUNGRkUyNkNGNjI0MjcwRjg3NjNEODlCMDc2MkYxQjNERkU3NUZDOERCOTk3NzYyQUMwMzE5MUNCNzZEREJBRjY2NzNBQjE3MEI5OTM0RUQzRTY4RTY5QzZFOTA3OTc3RkMwMUE0MkY1QjMwRUU3QkUyMTg0NzM0NTk4OTgwOUZDNkE3MkJDQTczQTg3QTBBOTk2RDc0RkNFQzI1OUEzNTM5OUYxQ0Y5MDA5NzdFQjE5QTY0OTExM0Q5MTU0Q0FCNTk5QzIwNzM4ODlCN0Y3M0Y5QTRDNUFBRTc3NjQ3Q0NGRjg3NjI2RjA5Q0ZFNUMwM0FCQjY1QjAwMjhBQjRCMDM5M0FDNzVENERENDkxRUU3QTRCMTQxOTAyODYxQzg4QjM1MTIxMjEzQUE3NUNEQUUxRDZCOURBQ0NBRjMwQ0FGNzFGNkE0MjlCMEIwNDM1OEUwOTlGNEY4QzdBMTBBNzk5MTk1NUUyMzRBNDM3NjRCNTc0QTBCNUQ5MDA5OTZDODBDMUUxQzAxMDNDNTQxMzhBREFDOThBQkU3RjVFOEY1Mjk0NUQzNTI3NTIzOUQ1NEJCNEM2MTA1QzY3RUVEMjk3MERDNzQ0RUE5MUI1Rjc5RDJGRUNGOEQ2QUU4NTk3MkJCQTA4RDE2OUM2RUFERDREMTczOUQzNjY4QjFFNDY5M0I3OUNCQjFCQTE5Njk2OTdBMzREMTUwNDM4MzIyRDNFRjJEREQ0MzU5MkRFQzUwNTlEQUNDRENENDQwRTdFREEzMEE2OTM3RTIyN0UwNkU1NEI4RTAzQ0FBQ0M1MDJBNUVGOUQ1RTE5NzYxMzEzQThGQjgzN0VGNDhEODk4N0M2RDU3MUU5RkYyM0Q4MUE3NDZCN0Q0MkVDNDJCQTA4REMyNzMyNjA3NEZBQzFFQTg0MDg1M0MxNzNGNkNBQ0IwQzk1RDkwQzg3OTQxOENGNzQzQTgyRkNDOEE5OTBBRkFEMkQzNDgyNzlGRUM2QUU0RTVEQjFCMTRCMDhBOTFEMkMzQkFCNUFBODU5RTU1RTNBQUY3NTYwRURCNTMxMkQ1NEVGNTAzNjFEMjA4N0U2ODZGMDIxRTA1NkE1NjYzMDgyMjk0RDgyNEY4NzBGRTY4OTY3QjYzMzEyQUYwRTc0OTg1MTdFQzk3MzE5N0NDMUI0RTQzMTdCQzNDMjExODA4MDM5M0I3Q0MzMzcxRkI5NzJBMDJBQUQxOUIxRTJERUJCOENBNjg5RkU0OTY2Mjc1RDY4MDhEMTk2M0FCQzA4QUU2RjBFQzI4REREMTNCMkExMjc1MDczRjc0NUNFNjVBRThDODUyODQ1QThEQzdCMjJBRkVDREY2RUJFQ0RGNTdFRkFBNjUxM0U2Q0E2NjI0Nzc4QkExNzhCMjJCREQ4N0U2NUVEMDExMTFEQzYzRThCODA2MThDMzBFRkY2RUQ4Mjc0MDIxRTg1NTdDRDdEMDQzOTdGNzEzMTRGODM0RkJCOEQ4NkY1RTM5MDE1RTc3QTRDQUY4MTU1NjU4MUJERUJBM0QxODQwQkFBMDUwNTRDN0IxNDNBNDM3QUUxNUY4QzA0RTYwNjMyOTgwQTg5NUE1NzM0RDY0MkE2QjU0NzhGNDlGQkY1QTQ4M0ZENDhENzdGNjRENDRFMURFNTQ4NjE3ODNCQTcwMzRCQzZCQUM5NjdEMTYyMjk4NzVGODg4NUIzMDExNDNFNEUxQzhGMUJCQjNDQTg2MzczMTUxQzdFQzUwNjdCQzNDNDY5NDdBOUYwNURDOUMxMEZGNDhCMzI3NjhGRjk1MDFCNTIyREQwNTg2MDZBNTYzRkIzNEUxQkMyOEU3NDhGMzczQkIyN0NBRDM4N0RCODE3NUYzOUY4NUQ2NDNFRDYxNUVFNjBBNEQ3NjAxMzI5NDNDMzMwQTZFNzQ5OUMwNEIzM0E3QTY5NzgxNUU2MzcxRUU0MkNFQzkyOThCMjAxN0M0NkM0RDA1MThEOTQ0QUZERDM3RTI3NzI2QjNCNjA3QkIyNEU1RjdERjY2MzY2RDQ3RjNBRUREQjNBRThEQTUxQ0M2OTM2QjhBQjcxRjVDNzNBRjM3OUVFRDEzOUNFQUQ5NURFQTNDQzhCMUVGNjgyMTRCMThDREMyRDVGQTRERDlFNDQ2RkVDODJFNEFCNjUwMUFGRDMwNTM3NTcwMTk2QzUyNDBCRDlBODFERDE5MDBENzQzMjA0NkY0ODU5MjQzQjYwNjNCNTEzNURCMDNEN0E4NUQ1RjJBN0U3NUFBN0Y5N0FFOTBENzY0QkE3MDc2QjgyMDQ5NUNENkFBMjA0NzhGQ0Q3MjAyNkU5RjBFRkMwMkEwRDRDNkIzRkRGMDI1NDBDQjk4M0U0QjQxMzExQjMwM0YzRTc5QTg3RUQ5QjcwOTQwRkYxRUIwRjU2NEZCMjlBNEY2MTc4Q0YwMDBCOEU1QTMwMTY3NjA5NkI0OEY0MzQ1RkM4NTI2OEQxRDM2RjQwMTRCQTAzOTk2Q0VDQTY4QjEwNzc4NjY3MDRBNzQ1NkY4QkFFRjhDQUU0MkY2MDA3MDAwRTkxOTFGNjYzRjk3MzMxQzcyMEZDOUVCMTU3M0UyMTIxN0IxOUM5MzI1Q0E5QzEzQzQwNzE5MTRFOEI1QzI0MDg4OTdBQzVERjE4NkI0REU1OEZFODAxQzZDMzI5RDQ4NTlFQzVFRjFGM0E0OTVEMjM1NDhDRkUzREM1NEJFNDU3MzkzMERFREY2NzU3MkI0NEU2QTMwRDU4Mzk0OUQzRDFGNDNBNTZDMjBDRDY1QkUzRjRGNThGNTIyOUVCMkVCQzZCOURCOTRGRjFBRTdDMTM1NTkyRUM4N0EwOUYyQzQ1Q0I5MUFDMDhBNTE1NjM5ODVBMUQ4ODAyMjkzOTRDQTJEMTQ5Q0M3N0NDNUQ3NTI1OUNDODM0RUMzQzdCMzhGNjJDRDNBOEVBRjc1NTNENkJGMjA0MjU4NDA3NjcxN0E5QzQxREM2MTQ2MTlGRUVDMURCOURBODQ5MTM4MUM3REEzMENBQTVGNEJEMTFGMzc2QjU3RDVGOUZBOEJGMDg3ODBDQjM2QkQyQjM5NzU5NUMwMDcwQTc5NzRFOThEQ0NDQTRFMjA4NTNCMzVEMDZCRjE4OTY2NUEzNzQ4MEU5RTlGMTM1MTcwNDUxQkVDNjdDMUJDNkFBQjNFQTc0M0Q4Qjg5REYwOURDRkFFQTQ4Q0VEMUMyQkU2NEJFMTM4MkRBMTkwM0ZDNENEQjREOUJGRjYxRDUzM0YyNjU4NkY1ODQwOEQ4RjhCQTQ3OEFGRjExOEJBMUU0RjNDOUM1MzhGOTY4NTIyRTcxQzkyRTA4REUxNUI3QTUzODgzOTlGMTBGODA0MzdEQUY3NEQ3MDY5NEM4N0VEQ0ZGRTk5NTI2N0MwM0IyQkQzMDlCMzU4NjVGMUQ3OEM4QjA2OTA3QkEwMkJERjEyQzZFMUJBQ0JCRTAwRUU3QjVEQjBERTcxOTBCMzQ0Qzg5MTRGRkIxOUQyOEQ2NzhBQTE0RTEzMDk4MzlGNTE1QUYyMTQ1OTFDOTFGQTczQjkxNjU3OTQ4NkFGM0ExNzA3NTA2QjJENUMyNENCQjIzREEwMkM3RDJGQkRDQkJCRkZCNDBFRTcwNDE4ODQ0QkRFODM3RDM5REIxNEY5NDgyNDIyNTE1M0E0OEYzNjVGMkY4OTgwMjk0MDlBQTRCQzk4MDYxNjU3MzIzQTcxMkJBMzM5REQ5OUVGMjZDQzRGMkEyQTg1OEVFMzRGMDFCNkI5OTVFRDhCNThGQkQzOTRGRjk1ODk1Q0FGNjFDOTM1N0U3NUEyOUFGRkQ5ODEwMTEyNTVEMjgyNEE5Qzc2NDg1MEEyNkNCQThDMzM0NEFFMzE0RDRBRjY5NTc1RjU1RDBBMEY4NEQ3RDkyQ0FBQzA1OEU3QjY1MEQ2NzQ2RUM2RTAzRThFRDgxREY1MUZFRjk0Rjk4NkE3RjdEQkQyMjRBNDcyM0Y3QTk3QTdFMjI0N0RCNDM2RjQ1NzU2RkJFQzkwQkVDNzJEMTMwODA3RkExMzFGMThBRTUzOUVFMDlBOUM1NTVGQUZDMDI0MzQyNDhEREY5OENGRDU5N0YwNDg5NjAzNjI2MUMwQTE4RUQ1Rjg0RUM2REQ0QjQ2OUE4ODE3RkU5REUxMTUyRTM0QkExNjcwMzM5QzQ3REM3MkIyMjkxNTJDNTVDMEJFOUUzOUI2QzFBNDJBN0Y3NUYxOTUxQzMwNDNGM0FEMTc4MEFFRURBNkE5MzJGRjAxQUM5RkFGNkRGN0U5QUE1NjRERDFCNUUzREJBOTIyQUUyOTRFM0Y3RDU2NzkyNzFENjMxQzMzRkI3NDk0OTQ4RUEyM0VCMEFFNzlENDkwQ0Y4MURDREZGMDEzOTQxN0E4MEVFOUFBOTc3Njk0NDZBODFGM0E2MEE2RDc4NzUxQzNEQTBEMjUwMkRFRjgyM0JBNTkxMDZCNzU3QTE0QjBGNkZGOTA1NEJDODNFOEI3MDUzNzI1N0E2NDkwODIzQzg4REMxNEY2NkFDNDkyM0VFNjRBQUNFMDE1RDAzOTYxRjMzMEUzNTEzNzU1RkRGOTNCNTk5QTVDQTBBMTcxQkZCNjIyNDA1M0ZCQUExQUM0NThCRTcxNTVDODgifQ.TQD82vyvJa-rInZUK-vLRjQwJPzFqKcDVZ7NilvAVgY',
+                },
+                success: function (data) {
+                    if (data != 'true') {
+                        alert('Ocorreu um erro!');
+                        stopLoading();
+                    }
+                }
+            });
+        }
+
+        function getIosToken(token) {
+            iosToken = 'Bearer ' + token;
+        }
+
+        $('body').on('submit', '.submitAereoPurchase', function (e) {
+            startLoading();
+
+            var postHashInput = $(this).find('input[name="post-hash"]');
+            var postForm = $(this);
+
+            if (postHashInput.val() != '') {
+                return true;
+            }
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+            }
+
+            var data = '';
+
+            if (deviceOs == 'ios') {
+                var objIos = {
+                    'method': "POST",
+                    'data': postForm.serialize(),
+                    'path': postForm.attr('action'),
+                };
+
+                window.webkit.messageHandlers.iosListener.postMessage(objIos);
+            } else {
+                $.ajax({
+                    url: postForm.attr('action'),
+                    dataType: 'html',
+                    type: 'POST',
+                    data: postForm.serialize(),
+                    headers: {
+                        'trigg_post_content': postForm.serialize(),
+                    },
+                    success: function (response) {
+                        data = $.parseJSON(response);
+
+                        if (data.status != 'ok') {
+                            alert('Ocorreu um erro ao selecionar o trecho aéreo.');
+                            stopLoading();
+                            document.location.reload(true);
+                        } else {
+                            postForm.find('input').attr('disabled', 'disabled');
+                            postHashInput.removeAttr('disabled', 'disabled').val(data.post_hash);
+                            postForm.submit();
+                        }
+                    },
+                    error: function (xhr, er) {
+                        alert('Ocorreu um erro ao selecionar o trecho aéreo.');
+                        stopLoading();
+                        document.location.reload(true);
+                    }
+                });
+            }
+
+            return false;
+        });
+
+        $('#test-redirect').click(function (e) {
+            e.preventDefault();
+
+            var protocol = 'lltrigg';
+            var points = '10000';
+            var id = '450';
+
+            window.location = (protocol + '://redeem?id=' + id + '&value=' + points + '&type=test');
+
+            return false;
+        });
+
+        $('.nospecialchars').keyup(function (e) {
+            var spVal = $(this).val();
+            $(this).val(
+                especialCharMask(spVal)
+            );
+        });
+
+        function especialCharMask(especialChar) {
+            const parsed = especialChar.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z ])/g, '');
+            return parsed;
+        }
+
+        function triggCancelOrder() {
+            console.log('cancelando');
+            window.location = '/app/loyalty/webview/trigg/loja/sacola';
+        }
+
+        $('.date-selector').change(function () {
+            var selectorFind = $(this).parent().find('.from-date-formatted');
+            var selectorFind2 = $(this).parent().find('.from_date_formatted');
+            var selectorFind3 = $(this).parent().find('.from-date');
+
+            if ($(this).val() != '') {
+                let formmated = $(this).val().split('-');
+                selectorFind.val(formmated[2] + '/' + formmated[1] + '/' + formmated[0]);
+                selectorFind2.val(formmated[2] + '/' + formmated[1] + '/' + formmated[0]);
+                selectorFind3.val($(this).val());
+            } else {
+                selectorFind.val('');
+                selectorFind2.val('');
+                selectorFind3.val('');
+            }
+        });
+
+        $('#selectDateFrom').change(function () {
+            if ($(this).val() != '') {
+                let formmated = $(this).val().split('-');
+                $('#from_date_formatted, #from-date-formatted').val(formmated[2] + '/' + formmated[1] + '/' +
+                    formmated[0]);
+
+                $('#from_date').val($(this).val());
+                $('#from-date').val($(this).val());
+            } else {
+                $('#from_date_formatted, #from-date-formatted').val('');
+
+                $('#from_date').val('');
+                $('#from-date').val('');
+            }
+        });
+
+        $('#selectDateTo').change(function () {
+            if ($(this).val() != '') {
+                let formmated = $(this).val().split('-');
+                $('#to_date_formatted, #to-date-formatted').val(formmated[2] + '/' + formmated[1] + '/' +
+                    formmated[0]);
+
+                $('#to_date').val($(this).val());
+                $('#to-date').val($(this).val());
+            } else {
+                $('#to_date_formatted, #to-date-formatted').val('');
+
+                $('#to_date').val('');
+                $('#to-date').val('');
+            }
+        });
+
+        console.log($(document).height());
+        console.log($(window).height());
+
+        if ($(document).height() > $(window).height()) {
+            //$('.ctn_fixed_bottom').css('position', 'absolute');
+        }
+
+        // Restricts input for each element in the set of matched elements to the given inputFilter.
+        (function ($) {
+            $.fn.inputFilter = function (inputFilter) {
+                return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function () {
+                    if (inputFilter(this.value)) {
+                        this.oldValue = this.value;
+                        this.oldSelectionStart = this.selectionStart;
+                        this.oldSelectionEnd = this.selectionEnd;
+                    } else if (this.hasOwnProperty("oldValue")) {
+                        this.value = this.oldValue;
+                        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                    }
+                });
+            };
+        }(jQuery));
+
+        $(".is_only_number").inputFilter(function (value) {
+            return /^\d*$/.test(value);
+        });
+
+        $(document).delegate('.finalizar_pedido_pontos', 'click', function (e) {
+
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                headers: {
+                    'trigg_post_content': $('#doAereoForm').serialize(),
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'OS': deviceOs,
+                },
+                url: $('#doAereoForm').attr('action') + '?ajax=true',
+                data: $('#doAereoForm').serialize(),
+                complete: function () {
+                    //$('#finalizar_pedido').text('FINALIZAR PEDIDO');
+                    $('#finalizar_pedido').removeAttr('disabled', 'disabled');
+                },
+                success: function (data) {
+                    if (data.status == 'ok') {
+                        console.log('redirecionando');
+                        let schema = data.redirect_url;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    } else {
+                        console.log('redirecionando');
+                        let schema = data.redirect_url;
+
+                        stopLoading();
+
+                        window.location = schema;
+                    }
+                },
+                error: function (xhr, er) {
+                    console.log(xhr);
+                    console.log(er);
+                    alert('Ocorreu um erro ao enviar informações do pedido.')
+                    stopLoading();
+                }
+            });
+
+        });
+
+
+        $(document).delegate('.finalizar_pedido_trigg_pagamento', 'click', function (e) {
+            if ($(this).hasClass('inactive_button_trigg')) {
+                e.preventDefault();
+                $(this).blur();
+                stopLoading();
+                return false;
+            }
+
+            startLoading();
+
+            if (deviceOs == 'ios') {
+                e.preventDefault();
+            }
+
+            var card = {};
+            card.card_holder_name = $('#card_owner').val();
+            card.card_expiration_date = $('#card_expiration').val();
+            card.card_number = $('#card_number').val();
+            card.card_cvv = $('#card_cvv').val();
+            owner = $('#card_owner_cpf').val();
+
+            if (card.card_number === "") {
+                alert('Preencha o número do cartão.');
+                stopLoading();
+                return false;
+            }
+
+            if (card.card_holder_name === "") {
+                alert('Preencha o nome do titular do cartão.');
+                stopLoading();
+                return false;
+            }
+
+            if (owner === "") {
+                alert('Preencha o CPF do titular do cartão.');
+                stopLoading();
+                return false;
+            }
+
+            if (card.card_expiration_date === "") {
+                alert('Preencha a data de expiração do cartão.');
+                stopLoading();
+                return false;
+            }
+
+            if (card.card_cvv === "") {
+                alert('Preencha o CVV do cartão.');
+                stopLoading();
+                return false;
+            }
+
+            console.log(card);
+            console.log('Dados do cartão');
+            console.log(card.card_holder_name);
+            console.log(card.card_expiration_date);
+            console.log(card.card_number);
+            console.log(card.card_cvv);
+
+            var cardValidations = pagarme.validate({
+                card: card
+            });
+
+            console.log(cardValidations);
+
+            //Então você pode verificar se algum campo não é válido
+            if (!cardValidations.card.card_number) {
+                alert('Verifique os números do cartão.');
+                stopLoading();
+                console.log('Transação não autorizada. Verifique os números do cartão.');
+                return false;
+            } else if (!cardValidations.card.card_holder_name) {
+                alert('Preencha o nome do titular do cartão.');
+                stopLoading();
+                console.log('Transação não autorizada. Verifique o nome do titular do cartão.');
+                return false;
+            } else if (!cardValidations.card.card_expiration_date) {
+                alert(' Preencha a data de vencimento do cartão.');
+                stopLoading();
+                console.log('Transação não autorizada. Verifique a data de vencimento do cartão.');
+                return false;
+            } else if (!cardValidations.card.card_cvv) {
+                alert('Preencha o código de segurança do cartão.');
+                stopLoading();
+                console.log('Transação não autorizada. Verifique o código de segurança do cartão.');
+                return false;
+            } else {
+                console.log('cartão validado');
+                pagarme.client.connect({
+                        encryption_key: 'ek_test_gZduqWm5rAhMMiT58rlFZCocdcecxd'
+                    })
+                    .then(client => client.security.encrypt(card))
+                    .then(function (card_hash) {
+                        console.log('Hash do cartao');
+                        console.log(card_hash);
+
+                        cardHash = card_hash;
+
+                        $('#card_hash').val(card_hash);
+                        $('#card_owner').val('');
+                        $('#card_expiration').val('');
+                        $('#card_number').val('');
+                        $('#card_cvv').val('');
+
+                        setTimeout(function () {
+                            completeCheckoutAereo();
+                        }, 500);
+                    })
+            }
+
+            return false;
+        });
+
+        function triggOrderSuccess() {
+            window.location.href = '/trigg/passagens-aereas/pedido-em-analise';
+        }
+
+        function triggOrderFail() {
+            window.location.href = '/trigg/passagens-aereas/erro-compra';
+        }
+
+        $('.button').click(function () {
+            $(this).blur();
+        });
+
+
+        $('.input_passenger_name, .input_passenger_lastname').on('change', function (event) {
+            var obj = $(this);
+            $(obj).closest(".passenger").find(".passenger_name").html($(obj).closest(".passenger").find(
+                '.input_passenger_name').val() + ' ' + $(obj).closest(".passenger").find(
+                '.input_passenger_lastname').val());
+            $(obj).closest(".passenger").find(".passenger_name_label").show();
+        });
+
+        if (typeof $('#checkFirstName').val() !== "undefined" && $('#checkFirstName').val() != '') {
+            $('.flight_input_label').addClass('opened');
+            $('.input_passenger_name').trigger('change');
+        } else {
+            $('#birthdate').attr('type', 'text');
+        }
+
+        $('.payment_type input').keyup(function () {
+            orderCardButton();
+        });
+
+        $('#accept_terms').click(function () {
+            orderCardButton();
+        });
+
+        $('#card_number').blur(function () {
+
+            console.log('saiu do input para consultar bin');
+
+            let isValidated = validatedCardBins($('#card_number').val());
+
+            $("#btnSubmit").attr("disabled", false);
+            //$("#btnSubmit").css("background-color", "#4b8e7f");
+            //$("#btnSubmit").css("border-color", "#4b8e7f");
+
+            if (!isValidated) {
+
+                console.log('desabilita submit motivo bin');
+
+                $("#btnSubmit").attr("disabled", true);
+                //$("#btnSubmit").css("background-color", "#dee2e6");
+                //$("#btnSubmit").css("border-color", "#dee2e6");
+            } else {
+
+                console.log('habilita submit motivo bin');
+
+                $("#btnSubmit").removeAttr("disabled");
+            }
+        });
+
+        function validatedCardBins(cardNumber) {
+            // TODO: implementar valdidação conforme o cartão do cliente trigg
+            return true;
+            console.log('valida card bin');
+
+            $('.invalid_card_bin_error').hide();
+
+            let currentCardBin = cardNumber;
+            currentCardBin = currentCardBin.replace(/\s/g, "");
+            currentCardBin = currentCardBin.replace(/\-/g, "");
+
+            currentCardBin = currentCardBin.substring(0, 6);
+
+            let acceptedCardBins = ['417958'];
+
+            let indexTarget = acceptedCardBins.indexOf(currentCardBin);
+
+            if (indexTarget == -1) {
+
+                console.log('exibe erro bin');
+
+                $('.invalid_card_bin_error').show();
+                $('#card_number').val('');
+                $('#card_number').focus();
+
+                return false;
+            }
+            return true;
+        }
+
+        function triggCancelOrder() {
+            stopLoading();
+
+            cardHash = '';
+            $('#card_hash').val('');
+        }
+
+        function orderCardButton() {
+            console.log('order card button');
+            console.log('is checked terms: ' + $('#accept_terms').is(':checked'));
+
+            console.log($('.payment_type').is(':hidden'));
+
+            if (!$('#accept_terms').is(':checked')) $('.finalizar_pedido_aereo').addClass('inactive_button_trigg');
+            else $('.finalizar_pedido_aereo').removeClass('inactive_button_trigg');
+            //if (!$('#accept_terms').is(':checked')) $('.finalizar_pedido_incentivale').attr('disabled', 'disabled'); else $('.finalizar_pedido_incentivale').removeAttr('disabled');
+
+            if (
+                $('.payment_type').is(':hidden') === false &&
+                $('.payment_type input[name=card_number]').val() != '' &&
+                $('.payment_type input[name=card_expiration]').val().length == 5 &&
+                $('.payment_type input[name=card_cvv]').val() != '' &&
+                $('.payment_type input[name=card_owner]').val() != ''
+            ) {
+                if ($('#accept_terms').is(':checked')) $('.finalizar_pedido_aereo').removeClass(
+                    'inactive_button_trigg');
+                else $('.finalizar_pedido_aereo').addClass('inactive_button_trigg');
+                $('#finalizar_pedido').removeClass('inactive_button_trigg');
+            } else if ($('.payment_type').is(':hidden') === false) {
+                $('.finalizar_pedido_aereo').addClass('inactive_button_trigg');
+                $('#finalizar_pedido').addClass('inactive_button_trigg');
+            } else {
+                if (!$('#accept_terms').is(':checked')) $('.finalizar_pedido_aereo').addClass('inactive_button_trigg');
+                else $('.finalizar_pedido_aereo').removeClass('inactive_button_trigg');
+                $('#finalizar_pedido').removeClass('inactive_button_trigg');
+            }
+
+            if ($('.payment_type').is(':visible') === true) {
+                console.log('form de pagamento visivel');
+                $('.finalizar_pedido_incentivale').addClass('finalizar_pedido_incentivale_pagamento');
+                if (deviceOs == 'ios') {
+                    $('.finalizar_pedido_incentivale').removeClass('finalizar_pedido_pontos');
+                }
+
+            } else {
+                if (deviceOs == 'ios') {
+                    $('.finalizar_pedido_incentivale').addClass('finalizar_pedido_pontos');
+                }
+
+                $('.finalizar_pedido_incentivale').removeClass('finalizar_pedido_incentivale_pagamento');
+                console.log('form de pagamento oculto');
+            }
+        }
+
+        $('#voltsInput').change(function () {
+            window.location = $('#voltsInput').val();
+        });
+
+        function decodeEntities(encodedString) {
+            var div = document.createElement('div');
+            div.innerHTML = encodedString;
+            return div.textContent;
+        }
+
+        $('.tipo_pagamento_taxa').change(function () {
+            let pontosAtribuir = $(this).attr('data-pontos-utilizar');
+            console.log('Pontos no clique: ' + pontosAtribuir);
+            hasClickedAtPayPrice = true;
+
+            if (pontosAtribuir >= 0) {
+                $('#payment_range').val(pontosAtribuir);
+                $('.checked-rs').css('display', 'inline-block');
+                $('.unchecked-rs').css('display', 'none');
+
+                $('.checked-pontos').css('display', 'none');
+                $('.unchecked-pontos').css('display', 'inline-block');
+
+                calculaParcelamento();
+            }
+        });
+
+
+        $('#customPoints').mask('000.000.000', {
+            reverse: true
+        });
+        $('#customPoints').blur(function () {
+            let pontosDigitados = $(this).val().replace('.', '');
+            let pontosTotal = $('#pontosUtilizaveis').val();
+            let pontosRestantes = pontosTotal - pontosDigitados;
+
+            if (pontosRestantes >= 0) {
+                $('#payment_range').val(pontosRestantes);
+                calculaParcelamento();
+            }
+        });
+
+
+
+        function loadManager(e) {
+            let classItem = $.trim($(e.target).attr('class'));
+
+            let items = ['goCat', 'search-icon', 'fas fa-times close-block',
+                'dropdown-toggle collapsed nav-link menu-link',
+                'dropdown-toggle nav-link menu-link', 'delete-address',
+                'back-to-top', 'end-desc', 'button is-medium is-warning is-fullwidth gold_button button-salvar',
+                'btn-show-resumo', 'mb-0 pedido-title collapsed', 'mb-0 pedido-title', 'flight_input_label'
+            ]; // negate list
+
+            if (!items.includes(classItem)) {
+                console.log('View load');
+                //$('#loading').modal('show');
+                setTimeout(function () {
+                    stopLoading()
+                }, 20000);
+            } else if (classItem == 'btn-show-resumo') {
+                showResume();
+            }
+        }
+
+        jQuery(document).ready(function () {
+            console.log('showResume');
+            $("a").bind("click", function (e) {
+                if ($(this).attr('href') != '') {
+                    loadManager(e);
+                }
+            });
+
+            $(".form-register").bind("submit", function (e) {
+                $('#loading').modal('show');
+            });
+        });
+
+        function postToQueryString(form) {
+            var pontos = $('#transfer-atomos').val();
+            var postHash = $('#post-hash').val();
+            var query = $('#query').val();
+
+            var action = $(form).attr('action');
+            action += '?query=' + query + '&points=' + pontos + '&post-hash=' + postHash;
+
+            $(form).attr('action', action);
+
+            return true;
+        }
+    </script>
+
+    <!--
+  INÍCIO DO MODAL DE INFORMACOES DO VOO
+-->
+    <div class="ll-modal modal-flight-info ll-modal">
+        <div class="modal-content">
+            <header class="header-modal-erro">
+                <div class="top flex-container flex-container-mobile-modal">
+                    <div class="back-arrow">
+                        <span class="action_close_modal">
+                            <img src="https://ll-qa.s3.amazonaws.com/public/trigg/img/bt_left.svg" alt="Voltar">
+                        </span>
+                    </div>
+                    <div>
+                        <h5>Detalhes do voo</h5>
+                    </div>
+                </div>
+            </header>
+            <div id="modal-flight-info-content"></div>
+        </div>
+    </div>
+    <!--
+  FIM DO MODAL DE INFORMACOES DO VOO
+-->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            568: {
+                slidesPerView: 3
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

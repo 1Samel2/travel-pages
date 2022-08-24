@@ -1,0 +1,136 @@
+.container {
+    margin: 0 7%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 0 2%;
+    }
+}
+
+h2 {
+    color: #00BAB3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 50px
+}
+
+.containerContent {
+    padding: 30px;
+}
+
+.logoVoo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logoVoo img {
+    width: 15px;
+    height: 100%;
+}
+
+.logoVoo p {
+    color: #00BAB3;
+    font-weight: bold;
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.divParagraphRight {
+    margin-top: 40px;
+}
+
+.divParagraphRight p {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divParagraphRight span {
+    font-size: 0.7rem;
+    color: #90949A;
+    font-weight: 100;
+}
+
+
+.border {
+    border-left: 3px;
+    height: 4px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+
+.line {
+    border-left: 4px solid #00BAB3;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+}
+
+.divParagraphLeft {
+    margin-top: 40px;
+}
+
+.divParagraphLeft p {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divParagraphLeft span {
+    font-size: 0.7rem;
+    color: #90949A;
+    font-weight: 100;
+}
+
+
+.bar {
+    background-color: #F0F2F5;
+    margin-top: 30px;
+    height: 40px;
+    margin-bottom: 60px;
+}
+
+.bar p {
+    padding: 8px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.icon {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+    color: #00BAB3;
+
+}
+
+button {
+    width: 100%;
+    color: #fff;
+    background-color: #00BAB3;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px;
+}

@@ -1,0 +1,50 @@
+.containerError {
+    margin-top: 20px;
+    margin: 0 7%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .containerError {
+        margin: 0 2%;
+    }
+}
+
+
+.paragraph {
+    margin-top: 70px;
+}
+
+img {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+
+.title {
+    color: #3BCAC5;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+
+.color {
+    color: #9A9EA3;
+}
+
+button {
+    width: 100%;
+    color: #fff;
+    background-color: #00BAB3;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px;
+}

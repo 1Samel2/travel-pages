@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin-top: 20px;
+    margin: 0 7%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 800px) {
+    .container {
+        margin: 0 2%;
+    }
+}
+
+
+.container-paragraph {
+    margin-bottom: 40px;
+}
+
+.aprovad {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #3BCAC5;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+@media(max-width: 800px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+.order {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.color {
+    color: #9A9EA3;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+}
+
+.accordion-header {
+    border-top: 2px solid rgba(154, 158, 163, 0.2);
+    border-bottom: 2px solid rgba(154, 158, 163, 0.2);
+}
+
+.accordion-body {
+    display: flex;
+}
+
+.information {
+    width: 20px;
+    height: 20px;
+}
+
+.info {
+    font-weight: bold;
+}
+
+.left {
+    margin-left: 10px;
+}
+
+.paragraph {
+    font-size: 13px;
+    color: rgb(154, 158, 163);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./assets/down-arrow.png) !important;
+}
+
+.accordion-button::after {
+    background-image: url(./assets/down-arrow.png) !important;
+}
+
+
+button:focus {
+    box-shadow: none !important;
+
+}
+
+button {
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+}
